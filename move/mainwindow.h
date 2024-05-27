@@ -29,6 +29,7 @@ private slots:
 
     void on_toolButton_clicked();
 
-
+signals:
+    void testSignal();
 };
 #endif // MAINWINDOW_H

@@ -3,6 +3,8 @@
 #include <QDebug>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <random>
+#include <QRandomGenerator>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
