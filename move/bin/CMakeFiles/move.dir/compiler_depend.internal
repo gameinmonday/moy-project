@@ -872,6 +872,12 @@ CMakeFiles/move.dir/mainwindow.cpp.o
  /usr/include/qt6/QtWidgets/qdialog.h
  /usr/include/qt6/QtWidgets/QMessageBox
  /usr/include/qt6/QtWidgets/qmessagebox.h
+ /usr/include/c++/10/random
+ /usr/include/c++/10/bits/random.h
+ /usr/include/c++/10/x86_64-alt-linux/bits/opt_random.h
+ /usr/include/c++/10/bits/random.tcc
+ /usr/include/qt6/QtCore/QRandomGenerator
+ /usr/include/qt6/QtCore/qrandom.h
 
 CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o
  /home/repetitor/_QtProjects/move/bin/move_autogen/mocs_compilation.cpp

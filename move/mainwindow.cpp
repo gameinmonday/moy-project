@@ -3,6 +3,8 @@
 #include <QDebug>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <random>
+#include <QRandomGenerator>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -21,13 +23,39 @@ MainWindow::MainWindow(QWidget *parent)
         exit(1);
     }
 
+    int rowIndex {};
     while(!file.atEnd())
     {
         QByteArray line = file.readLine();
         QString strLine = QString::fromUtf8(line);
         QStringList lStr = split(strLine);
-        qDebug() << strLine;
+
+        int colIndex{};
+
+        for(auto item: lStr)
+        {
+            if(!rowIndex)
+            {
+                QVector<QString> v{};
+                filmTable.insert(colIndex++,v);
+            }
+            else
+            {
+                filmTable[colIndex++].push_back(item);
+            }
+        }
+        rowIndex++;
     }
+    for(int iRow=0; iRow < 4; iRow++)
+    {
+        for(int iCol=0; iCol < 4; iCol++)
+        {
+            std::uniform_real_distribution<> dist(0,1000);
+            qobject_cast<QLabel*>(ui->gr_randomFilm->itemAtPosition(iRow,iCol)->widget())->setText(filmTable[1][dist(*QRandomGenerator::global())]);
+        }
+
+    }
+
 }
 
 

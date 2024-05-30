@@ -20,6 +20,8 @@ public:
 private:
     Ui::MainWindow *ui;
     QStringList split(QString str);
+
+    QMap<int, QVector<QString>> filmTable{};
 public slots:
 
 
