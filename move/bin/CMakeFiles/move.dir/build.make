@@ -71,7 +71,6 @@ include CMakeFiles/move.dir/flags.make
 
 move_autogen/EWIEGA46WW/qrc_img.cpp: ../img.qrc
 move_autogen/EWIEGA46WW/qrc_img.cpp: CMakeFiles/move_autogen.dir/AutoRcc_img_EWIEGA46WW_Info.json
-move_autogen/EWIEGA46WW/qrc_img.cpp: ../img/find.png
 move_autogen/EWIEGA46WW/qrc_img.cpp: /usr/lib64/qt6/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/repetitor/_QtProjects/move/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for img.qrc"
 	/usr/bin/cmake -E cmake_autorcc /home/repetitor/_QtProjects/move/bin/CMakeFiles/move_autogen.dir/AutoRcc_img_EWIEGA46WW_Info.json Debug

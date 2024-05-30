@@ -5,7 +5,7 @@
 	"CMAKE_CURRENT_SOURCE_DIR" : "/home/repetitor/_QtProjects/move",
 	"CMAKE_SOURCE_DIR" : "/home/repetitor/_QtProjects/move",
 	"INCLUDE_DIR" : "/home/repetitor/_QtProjects/move/bin/move_autogen/include",
-	"INPUTS" : [ "/home/repetitor/_QtProjects/move/img/find.png" ],
+	"INPUTS" : [],
 	"LOCK_FILE" : "/home/repetitor/_QtProjects/move/bin/CMakeFiles/move_autogen.dir/AutoRcc_img_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
 	"OPTIONS" : [ "-name", "img" ],

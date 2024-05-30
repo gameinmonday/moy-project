@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include <random>
 #include <QRandomGenerator>
+#include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -12,8 +13,10 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    QDir dir("./img/");
+    QStringList imgPathList = dir.entryList();
     QString fileName = QFileDialog::getOpenFileName(this,
-                                            tr("Выберите CSV файл"), "", tr("CSV (*.csv)"));
+                                                    tr("Выберите CSV файл"), "", tr("CSV (*.csv)"));
     QFile file(fileName);
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
@@ -29,6 +32,11 @@ MainWindow::MainWindow(QWidget *parent)
         QByteArray line = file.readLine();
         QString strLine = QString::fromUtf8(line);
         QStringList lStr = split(strLine);
+
+        if(!imgPathList.contains(lStr.at(1)))
+        {
+            continue;
+        }
 
         int colIndex{};
 
@@ -46,6 +54,14 @@ MainWindow::MainWindow(QWidget *parent)
         }
         rowIndex++;
     }
+    std::uniform_real_distribution<> dist(0,filmTable[1].count()-1);
+    ui->l_mainFilm->setText(filmTable[1][dist(*QRandomGenerator::global())]);
+
+    dir.setPath("./img/"+ui->l_mainFilm->text());
+    QStringList fileList = dir.entryList();
+    QPixmap pix("./img/"+ui->l_mainFilm->text()+"/"+fileList[4]);
+    ui->l_mainFilm->setPixmap(pix.scaled(500,200));
+
     for(int iRow=0; iRow < 4; iRow++)
     {
         for(int iCol=0; iCol < 4; iCol++)
@@ -55,19 +71,24 @@ MainWindow::MainWindow(QWidget *parent)
             connect(mv, &MoveLabel::click, this, [&](){
 
             });
-            std::uniform_real_distribution<> dist(0,1000);
+            std::uniform_real_distribution<> dist(0,filmTable[1].count()-1);
             mv->setText(filmTable[1][dist(*QRandomGenerator::global())]);
+            mv->setToolTip(mv->text());
+            qDebug() << mv->text();
+            QDir dir("./img/"+mv->text());
+            QStringList fileList = dir.entryList();
+
+            QPixmap pix("./img/"+mv->text()+"/"+fileList[2]);
+            mv->setPixmap(pix.scaled(112,150));
         }
     }
 
-    ui->toolButton->setIcon(QIcon(":/img/find.png"));
+    //ui->toolButton->setIcon(QIcon(":/img/find.png"));
     connect(ui->toolButton, &QToolButton::clicked, this, [&](){
 
     });
 
 }
-
-
 
 
 MainWindow::~MainWindow()
@@ -100,7 +121,7 @@ QStringList MainWindow::split(QString str)
             str.remove(0, cIndex+1);
         }
 
-     }
+    }
 
     return result;
 }
