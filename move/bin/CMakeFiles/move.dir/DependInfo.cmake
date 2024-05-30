@@ -8,9 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/repetitor/_QtProjects/move/findform.cpp" "CMakeFiles/move.dir/findform.cpp.o" "gcc" "CMakeFiles/move.dir/findform.cpp.o.d"
   "/home/repetitor/_QtProjects/move/main.cpp" "CMakeFiles/move.dir/main.cpp.o" "gcc" "CMakeFiles/move.dir/main.cpp.o.d"
   "/home/repetitor/_QtProjects/move/mainwindow.cpp" "CMakeFiles/move.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/move.dir/mainwindow.cpp.o.d"
+  "/home/repetitor/_QtProjects/move/bin/move_autogen/EWIEGA46WW/qrc_img.cpp" "CMakeFiles/move.dir/move_autogen/EWIEGA46WW/qrc_img.cpp.o" "gcc" "CMakeFiles/move.dir/move_autogen/EWIEGA46WW/qrc_img.cpp.o.d"
   "/home/repetitor/_QtProjects/move/bin/move_autogen/mocs_compilation.cpp" "CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o.d"
+  "/home/repetitor/_QtProjects/move/movelabel.cpp" "CMakeFiles/move.dir/movelabel.cpp.o" "gcc" "CMakeFiles/move.dir/movelabel.cpp.o.d"
   )
 
 # Targets to which this target links.

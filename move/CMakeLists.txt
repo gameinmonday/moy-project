@@ -23,6 +23,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(move
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        movelabel.h movelabel.cpp
+        img.qrc
+        findform.h findform.cpp findform.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET move APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

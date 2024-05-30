@@ -404,7 +404,8 @@
 		"/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake",
 		"/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake",
 		"/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
-		"/usr/share/cmake/Modules/GNUInstallDirs.cmake"
+		"/usr/share/cmake/Modules/GNUInstallDirs.cmake",
+		"/home/repetitor/_QtProjects/move/img.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/repetitor/_QtProjects/move",
 	"DEP_FILE" : "",
@@ -412,9 +413,21 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/repetitor/_QtProjects/move/findform.h",
+			"MU",
+			"EWIEGA46WW/moc_findform.cpp",
+			null
+		],
+		[
 			"/home/repetitor/_QtProjects/move/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/home/repetitor/_QtProjects/move/movelabel.h",
+			"MU",
+			"EWIEGA46WW/moc_movelabel.cpp",
 			null
 		]
 	],
@@ -474,8 +487,10 @@
 	"SETTINGS_FILE" : "/home/repetitor/_QtProjects/move/bin/CMakeFiles/move_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/repetitor/_QtProjects/move/findform.cpp", "MU", null ],
 		[ "/home/repetitor/_QtProjects/move/main.cpp", "MU", null ],
-		[ "/home/repetitor/_QtProjects/move/mainwindow.cpp", "MU", null ]
+		[ "/home/repetitor/_QtProjects/move/mainwindow.cpp", "MU", null ],
+		[ "/home/repetitor/_QtProjects/move/movelabel.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

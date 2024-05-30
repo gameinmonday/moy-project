@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "movelabel.h"
+#include "findform.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;

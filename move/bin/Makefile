@@ -187,6 +187,30 @@ move_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_autogen.dir/build.make CMakeFiles/move_autogen.dir/build
 .PHONY : move_autogen/fast
 
+findform.o: findform.cpp.o
+.PHONY : findform.o
+
+# target to build an object file
+findform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/findform.cpp.o
+.PHONY : findform.cpp.o
+
+findform.i: findform.cpp.i
+.PHONY : findform.i
+
+# target to preprocess a source file
+findform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/findform.cpp.i
+.PHONY : findform.cpp.i
+
+findform.s: findform.cpp.s
+.PHONY : findform.s
+
+# target to generate assembly for a file
+findform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/findform.cpp.s
+.PHONY : findform.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -235,6 +259,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+move_autogen/EWIEGA46WW/qrc_img.o: move_autogen/EWIEGA46WW/qrc_img.cpp.o
+.PHONY : move_autogen/EWIEGA46WW/qrc_img.o
+
+# target to build an object file
+move_autogen/EWIEGA46WW/qrc_img.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/move_autogen/EWIEGA46WW/qrc_img.cpp.o
+.PHONY : move_autogen/EWIEGA46WW/qrc_img.cpp.o
+
+move_autogen/EWIEGA46WW/qrc_img.i: move_autogen/EWIEGA46WW/qrc_img.cpp.i
+.PHONY : move_autogen/EWIEGA46WW/qrc_img.i
+
+# target to preprocess a source file
+move_autogen/EWIEGA46WW/qrc_img.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/move_autogen/EWIEGA46WW/qrc_img.cpp.i
+.PHONY : move_autogen/EWIEGA46WW/qrc_img.cpp.i
+
+move_autogen/EWIEGA46WW/qrc_img.s: move_autogen/EWIEGA46WW/qrc_img.cpp.s
+.PHONY : move_autogen/EWIEGA46WW/qrc_img.s
+
+# target to generate assembly for a file
+move_autogen/EWIEGA46WW/qrc_img.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/move_autogen/EWIEGA46WW/qrc_img.cpp.s
+.PHONY : move_autogen/EWIEGA46WW/qrc_img.cpp.s
+
 move_autogen/mocs_compilation.o: move_autogen/mocs_compilation.cpp.o
 .PHONY : move_autogen/mocs_compilation.o
 
@@ -259,6 +307,30 @@ move_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.s
 .PHONY : move_autogen/mocs_compilation.cpp.s
 
+movelabel.o: movelabel.cpp.o
+.PHONY : movelabel.o
+
+# target to build an object file
+movelabel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/movelabel.cpp.o
+.PHONY : movelabel.cpp.o
+
+movelabel.i: movelabel.cpp.i
+.PHONY : movelabel.i
+
+# target to preprocess a source file
+movelabel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/movelabel.cpp.i
+.PHONY : movelabel.cpp.i
+
+movelabel.s: movelabel.cpp.s
+.PHONY : movelabel.s
+
+# target to generate assembly for a file
+movelabel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/movelabel.cpp.s
+.PHONY : movelabel.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -273,15 +345,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... move_autogen"
 	@echo "... move"
+	@echo "... findform.o"
+	@echo "... findform.i"
+	@echo "... findform.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... move_autogen/EWIEGA46WW/qrc_img.o"
+	@echo "... move_autogen/EWIEGA46WW/qrc_img.i"
+	@echo "... move_autogen/EWIEGA46WW/qrc_img.s"
 	@echo "... move_autogen/mocs_compilation.o"
 	@echo "... move_autogen/mocs_compilation.i"
 	@echo "... move_autogen/mocs_compilation.s"
+	@echo "... movelabel.o"
+	@echo "... movelabel.i"
+	@echo "... movelabel.s"
 .PHONY : help
 
 

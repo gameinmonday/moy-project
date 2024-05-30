@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/move_autogen"
+  "move_autogen/include/ui_findform.h"
   "move_autogen/include/ui_mainwindow.h"
   "move_autogen/mocs_compilation.cpp"
 )

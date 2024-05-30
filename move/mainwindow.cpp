@@ -50,11 +50,20 @@ MainWindow::MainWindow(QWidget *parent)
     {
         for(int iCol=0; iCol < 4; iCol++)
         {
-            std::uniform_real_distribution<> dist(0,1000);
-            qobject_cast<QLabel*>(ui->gr_randomFilm->itemAtPosition(iRow,iCol)->widget())->setText(filmTable[1][dist(*QRandomGenerator::global())]);
-        }
+            MoveLabel *mv = new MoveLabel("",this);
+            ui->gr_randomFilm->addWidget(mv, iRow, iCol);
+            connect(mv, &MoveLabel::click, this, [&](){
 
+            });
+            std::uniform_real_distribution<> dist(0,1000);
+            mv->setText(filmTable[1][dist(*QRandomGenerator::global())]);
+        }
     }
+
+    ui->toolButton->setIcon(QIcon(":/img/find.png"));
+    connect(ui->toolButton, &QToolButton::clicked, this, [&](){
+
+    });
 
 }
 
