@@ -17,13 +17,22 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+    void processMoveMarix();
 private:
     Ui::MainWindow *ui;
+    QStringList imgPathList{};
+
+
+
     QStringList split(QString str);
+    void readCsv(QString fileAddress);
 
     QMap<int, QVector<QString>> filmTable{};
+
+protected:
+    void resizeEvent(QResizeEvent *) override;
 public slots:
+
 
 
 private slots:

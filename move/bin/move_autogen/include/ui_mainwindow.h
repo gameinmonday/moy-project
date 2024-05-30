@@ -55,6 +55,10 @@ public:
         gridLayout->setObjectName("gridLayout");
         l_mainFilm = new QLabel(centralwidget);
         l_mainFilm->setObjectName("l_mainFilm");
+        sizePolicy.setHeightForWidth(l_mainFilm->sizePolicy().hasHeightForWidth());
+        l_mainFilm->setSizePolicy(sizePolicy);
+        l_mainFilm->setScaledContents(false);
+        l_mainFilm->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(l_mainFilm, 1, 0, 1, 2);
 
