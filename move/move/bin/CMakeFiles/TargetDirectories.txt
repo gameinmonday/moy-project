@@ -1,0 +1,8 @@
+/home/repetitor/_QtProjects/move/bin/CMakeFiles/move.dir
+/home/repetitor/_QtProjects/move/bin/CMakeFiles/edit_cache.dir
+/home/repetitor/_QtProjects/move/bin/CMakeFiles/rebuild_cache.dir
+/home/repetitor/_QtProjects/move/bin/CMakeFiles/list_install_components.dir
+/home/repetitor/_QtProjects/move/bin/CMakeFiles/install.dir
+/home/repetitor/_QtProjects/move/bin/CMakeFiles/install/local.dir
+/home/repetitor/_QtProjects/move/bin/CMakeFiles/install/strip.dir
+/home/repetitor/_QtProjects/move/bin/CMakeFiles/move_autogen.dir
