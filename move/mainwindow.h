@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "movelabel.h"
 #include "findform.h"
+#include "movecard.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -21,13 +22,14 @@ public:
 private:
     Ui::MainWindow *ui;
     QStringList imgPathList{};
-
+    QVector<QString> topicVector{};
 
 
     QStringList split(QString str);
     void readCsv(QString fileAddress);
 
     QMap<int, QVector<QString>> filmTable{};
+    QStringList fileList{};
 
 protected:
     void resizeEvent(QResizeEvent *) override;

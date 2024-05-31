@@ -20,14 +20,19 @@ MainWindow::MainWindow(QWidget *parent)
 
     readCsv(fileName);
 
-    std::uniform_real_distribution<> dist(0,filmTable[1].count()-1);
-    ui->l_mainFilm->setText(filmTable[1][dist(*QRandomGenerator::global())]);
+//    while(true)
+//    {
+        std::uniform_real_distribution<> dist(0,filmTable[1].count()-1);
+        ui->l_mainFilm->setText(filmTable[1][dist(*QRandomGenerator::global())]);
 
-    dir.setPath("./img/"+ui->l_mainFilm->text());
-    QStringList fileList = dir.entryList();
+        dir.setPath("./img/"+ui->l_mainFilm->text());
+        fileList = dir.entryList();
+        QPixmap pix("./img/"+ui->l_mainFilm->text()+"/"+fileList[4]);
 
-    QPixmap pix("./img/"+ui->l_mainFilm->text()+"/"+fileList[4]);
-    ui->l_mainFilm->setPixmap(pix.scaled(500,200));
+//    }
+
+
+
 
 
 
@@ -66,11 +71,9 @@ void MainWindow::processMoveMarix()
         {
             for(int iCol=0; iCol < columnCount; iCol++)
             {
-                MoveLabel *mv = new MoveLabel("",this);
+                MoveLabel *mv = new MoveLabel(this);
                 ui->gr_randomFilm->addWidget(mv, iRow, iCol);
-                connect(mv, &MoveLabel::click, this, [&](){
 
-                });
                 std::uniform_real_distribution<> dist(0,filmTable[1].count()-1);
                 mv->setText(filmTable[1][dist(*QRandomGenerator::global())]);
                 mv->setToolTip(mv->text());
@@ -80,11 +83,21 @@ void MainWindow::processMoveMarix()
 
                 QPixmap pix("./img/"+mv->text()+"/"+fileList[2]);
                 mv->drawPixmap(pix);
+
+                connect(mv, &MoveLabel::click, this, [&](){
+                    MoveLabel *mv = static_cast<MoveLabel*>(sender());
+                    QString moveName = mv->toolTip();
+                    int moveIndex = filmTable[1].indexOf(moveName);
+                    QVector<QString> moveParams{};
+                    moveParams << filmTable[0][moveIndex] << filmTable[1][moveIndex] << filmTable[2][moveIndex] << filmTable[3][moveIndex] <<
+                        filmTable[4][moveIndex] << filmTable[5][moveIndex] << filmTable[6][moveIndex] << filmTable[7][moveIndex] << filmTable[8][moveIndex]
+                               << filmTable[9][moveIndex] << filmTable[10][moveIndex] << filmTable[11][moveIndex];
+                    MoveCard *mc = new MoveCard(topicVector,moveParams);
+                    mc->show();
+                });
             }
         }
     }
-
-
 }
 
 QStringList MainWindow::split(QString str)
@@ -135,7 +148,7 @@ void MainWindow::readCsv(QString fileAddress)
         QString strLine = QString::fromUtf8(line);
         QStringList lStr = split(strLine);
 
-        if(!imgPathList.contains(lStr.at(1)))
+        if(!imgPathList.contains(lStr.at(1)) && rowIndex)
         {
             continue;
         }
@@ -147,7 +160,9 @@ void MainWindow::readCsv(QString fileAddress)
             if(!rowIndex)
             {
                 QVector<QString> v{};
+                topicVector << item;
                 filmTable.insert(colIndex++,v);
+
             }
             else
             {
@@ -161,6 +176,15 @@ void MainWindow::readCsv(QString fileAddress)
 void MainWindow::resizeEvent(QResizeEvent *)
 {
     processMoveMarix();
+    QPixmap pix("./img/"+ui->l_mainFilm->text()+"/"+fileList[4]);
+    QSize pixSize = pix.size();
+    if(pix.width())
+    {
+        QSize newSize (width(), ((double)width()/pixSize.width())*pixSize.height());
+        qDebug() << newSize << width() << pixSize.width() << pixSize.height();
+        ui->l_mainFilm->setPixmap(pix.scaled(width(),((double)width()/pixSize.width())*pixSize.height(),Qt::IgnoreAspectRatio, Qt::SmoothTransformation));
+        //ui->l_mainFilm->setFixedSize(width(),width()/pixSize.width()*pixSize.height());
+    }
 }
 
 

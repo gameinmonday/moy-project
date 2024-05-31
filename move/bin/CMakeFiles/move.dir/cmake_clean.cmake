@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/move.dir/move_autogen/EWIEGA46WW/qrc_img.cpp.o.d"
   "CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/move.dir/movecard.cpp.o"
+  "CMakeFiles/move.dir/movecard.cpp.o.d"
   "CMakeFiles/move.dir/movelabel.cpp.o"
   "CMakeFiles/move.dir/movelabel.cpp.o.d"
   "move"

@@ -26,6 +26,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         movelabel.h movelabel.cpp
         img.qrc
         findform.h findform.cpp findform.ui
+        movecard.h movecard.cpp movecard.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET move APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
