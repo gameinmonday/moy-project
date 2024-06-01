@@ -31,6 +31,8 @@ private:
     QMap<int, QVector<QString>> filmTable{};
     QStringList fileList{};
 
+    FindForm *ff{};
+
 protected:
     void resizeEvent(QResizeEvent *) override;
 public slots:
@@ -40,6 +42,8 @@ public slots:
 private slots:
 
     void on_toolButton_clicked();
+
+    void on_ac_find_triggered();
 
 signals:
     void testSignal();

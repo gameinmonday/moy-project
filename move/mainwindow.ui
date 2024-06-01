@@ -82,8 +82,26 @@
      <height>16</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="ac_find"/>
+    <addaction name="ac_exit"/>
+   </widget>
+   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="ac_find">
+   <property name="text">
+    <string>Поиск</string>
+   </property>
+  </action>
+  <action name="ac_exit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

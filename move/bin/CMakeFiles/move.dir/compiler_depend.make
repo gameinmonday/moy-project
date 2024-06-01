@@ -382,6 +382,15 @@ CMakeFiles/move.dir/findform.cpp.o: ../findform.cpp \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/qt6/QtGui/qcursor.h \
   /usr/include/qt6/QtGui/qbitmap.h \
+  ../movelabel.h \
+  /usr/include/qt6/QtWidgets/QLabel \
+  /usr/include/qt6/QtWidgets/qlabel.h \
+  /usr/include/qt6/QtWidgets/qframe.h \
+  /usr/include/qt6/QtWidgets/qwidget.h \
+  /usr/include/qt6/QtGui/qpicture.h \
+  /usr/include/qt6/QtCore/qiodevice.h \
+  /usr/include/qt6/QtGui/qtextdocument.h \
+  /usr/include/qt6/QtCore/qurl.h \
   move_autogen/include/ui_findform.h \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/qvariant.h \
@@ -406,8 +415,6 @@ CMakeFiles/move.dir/findform.cpp.o: ../findform.cpp \
   /usr/include/qt6/QtWidgets/qheaderview.h \
   /usr/include/qt6/QtWidgets/qabstractitemview.h \
   /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/qt6/QtWidgets/qframe.h \
-  /usr/include/qt6/QtWidgets/qwidget.h \
   /usr/include/qt6/QtCore/qabstractitemmodel.h \
   /usr/include/qt6/QtCore/qitemselectionmodel.h \
   /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
@@ -424,15 +431,52 @@ CMakeFiles/move.dir/findform.cpp.o: ../findform.cpp \
   /usr/include/qt6/QtWidgets/QLineEdit \
   /usr/include/qt6/QtWidgets/qlineedit.h \
   /usr/include/qt6/QtGui/qtextcursor.h \
-  /usr/include/qt6/QtGui/qtextdocument.h \
-  /usr/include/qt6/QtCore/qurl.h \
   /usr/include/qt6/QtGui/qtextformat.h \
   /usr/include/qt6/QtGui/qpen.h \
   /usr/include/qt6/QtGui/qtextoption.h \
   /usr/include/qt6/QtWidgets/QTableWidget \
   /usr/include/qt6/QtWidgets/qtablewidget.h \
   /usr/include/qt6/QtWidgets/qtableview.h \
-  /usr/include/qt6/QtWidgets/QWidget
+  /usr/include/qt6/QtWidgets/QWidget \
+  /usr/include/qt6/QtCore/QDir \
+  /usr/include/qt6/QtCore/qdir.h \
+  /usr/include/qt6/QtCore/qfile.h \
+  /usr/include/qt6/QtCore/qfiledevice.h \
+  /usr/include/c++/10/filesystem \
+  /usr/include/c++/10/bits/fs_fwd.h \
+  /usr/include/c++/10/bits/fs_path.h \
+  /usr/include/c++/10/locale \
+  /usr/include/c++/10/bits/locale_facets.h \
+  /usr/include/c++/10/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/c++/10/x86_64-alt-linux/bits/ctype_base.h \
+  /usr/include/c++/10/x86_64-alt-linux/bits/ctype_inline.h \
+  /usr/include/c++/10/bits/locale_facets.tcc \
+  /usr/include/c++/10/bits/locale_facets_nonio.h \
+  /usr/include/c++/10/x86_64-alt-linux/bits/time_members.h \
+  /usr/include/c++/10/x86_64-alt-linux/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/10/bits/codecvt.h \
+  /usr/include/c++/10/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/10/bits/locale_conv.h \
+  /usr/include/c++/10/iomanip \
+  /usr/include/c++/10/bits/quoted_string.h \
+  /usr/include/c++/10/sstream \
+  /usr/include/c++/10/istream \
+  /usr/include/c++/10/ios \
+  /usr/include/c++/10/bits/basic_ios.h \
+  /usr/include/c++/10/bits/basic_ios.tcc \
+  /usr/include/c++/10/ostream \
+  /usr/include/c++/10/bits/ostream.tcc \
+  /usr/include/c++/10/bits/istream.tcc \
+  /usr/include/c++/10/bits/sstream.tcc \
+  /usr/include/c++/10/codecvt \
+  /usr/include/c++/10/bits/fs_dir.h \
+  /usr/include/c++/10/bits/fs_ops.h \
+  /usr/include/qt6/QtCore/qfileinfo.h \
+  /usr/include/qt6/QtCore/qdatetime.h \
+  /usr/include/qt6/QtCore/qcalendar.h
 
 CMakeFiles/move.dir/main.cpp.o: ../main.cpp \
   /usr/include/stdc-predef.h \
@@ -1356,6 +1400,8 @@ CMakeFiles/move.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   move_autogen/include/ui_mainwindow.h \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/qvariant.h \
+  /usr/include/qt6/QtGui/QAction \
+  /usr/include/qt6/QtGui/qaction.h \
   /usr/include/qt6/QtWidgets/QApplication \
   /usr/include/qt6/QtWidgets/qapplication.h \
   /usr/include/qt6/QtCore/qcoreapplication.h \
@@ -1376,6 +1422,8 @@ CMakeFiles/move.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /usr/include/qt6/QtWidgets/qboxlayout.h \
   /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/QMainWindow \
+  /usr/include/qt6/QtWidgets/QMenu \
+  /usr/include/qt6/QtWidgets/qmenu.h \
   /usr/include/qt6/QtWidgets/QMenuBar \
   /usr/include/qt6/QtWidgets/qmenubar.h \
   /usr/include/qt6/QtWidgets/qmenu.h \
@@ -1787,20 +1835,24 @@ CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o: move_autogen/mocs_compi
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/qt6/QtGui/qcursor.h \
   /usr/include/qt6/QtGui/qbitmap.h \
-  move_autogen/EWIEGA46WW/moc_mainwindow.cpp \
-  ../mainwindow.h \
-  /usr/include/qt6/QtWidgets/QMainWindow \
-  /usr/include/qt6/QtWidgets/qmainwindow.h \
-  /usr/include/qt6/QtWidgets/qwidget.h \
-  /usr/include/qt6/QtWidgets/qtabwidget.h \
   ../movelabel.h \
   /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/qlabel.h \
   /usr/include/qt6/QtWidgets/qframe.h \
+  /usr/include/qt6/QtWidgets/qwidget.h \
   /usr/include/qt6/QtGui/qpicture.h \
   /usr/include/qt6/QtCore/qiodevice.h \
   /usr/include/qt6/QtGui/qtextdocument.h \
   /usr/include/qt6/QtCore/qurl.h \
+  /usr/include/qt6/QtGui/qtextcursor.h \
+  /usr/include/qt6/QtGui/qtextformat.h \
+  /usr/include/qt6/QtGui/qpen.h \
+  /usr/include/qt6/QtGui/qtextoption.h \
+  move_autogen/EWIEGA46WW/moc_mainwindow.cpp \
+  ../mainwindow.h \
+  /usr/include/qt6/QtWidgets/QMainWindow \
+  /usr/include/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/qt6/QtWidgets/qtabwidget.h \
   ../findform.h \
   ../movecard.h \
   /usr/include/qt6/QtCore/QDir \
@@ -1862,10 +1914,6 @@ CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o: move_autogen/mocs_compi
   /usr/include/qt6/QtWidgets/qrubberband.h \
   /usr/include/qt6/QtWidgets/QHeaderView \
   /usr/include/qt6/QtWidgets/qheaderview.h \
-  /usr/include/qt6/QtGui/qtextcursor.h \
-  /usr/include/qt6/QtGui/qtextformat.h \
-  /usr/include/qt6/QtGui/qpen.h \
-  /usr/include/qt6/QtGui/qtextoption.h \
   move_autogen/EWIEGA46WW/moc_movecard.cpp \
   ../movecard.h \
   move_autogen/EWIEGA46WW/moc_movelabel.cpp \
@@ -2753,6 +2801,10 @@ move_autogen/EWIEGA46WW/moc_findform.cpp:
 
 move_autogen/include/ui_mainwindow.h:
 
+/usr/include/qt6/QtWidgets/qmainwindow.h:
+
+../main.cpp:
+
 /usr/include/c++/10/bits/fs_ops.h:
 
 /usr/include/qt6/QtCore/qfileinfo.h:
@@ -2793,17 +2845,9 @@ move_autogen/include/ui_mainwindow.h:
 
 /usr/include/qt6/QtCore/qfile.h:
 
-/usr/include/qt6/QtWidgets/QLabel:
-
-/usr/include/qt6/QtWidgets/qmainwindow.h:
-
-../main.cpp:
-
 /usr/include/qt6/QtGui/qtextoption.h:
 
 /usr/include/qt6/QtGui/qtextformat.h:
-
-/usr/include/qt6/QtCore/qurl.h:
 
 /usr/include/c++/10/x86_64-alt-linux/bits/ctype_base.h:
 
@@ -2821,13 +2865,7 @@ move_autogen/include/ui_mainwindow.h:
 
 /usr/include/qt6/QtCore/qabstractitemmodel.h:
 
-/usr/include/qt6/QtWidgets/qframe.h:
-
 /usr/include/qt6/QtWidgets/QHeaderView:
-
-../movelabel.h:
-
-/usr/include/qt6/QtWidgets/qboxlayout.h:
 
 /usr/include/qt6/QtCore/qlocale.h:
 
@@ -2842,6 +2880,16 @@ move_autogen/mocs_compilation.cpp:
 /usr/include/qt6/QtCore/qeventloop.h:
 
 /usr/include/qt6/QtCore/QVariant:
+
+/usr/include/qt6/QtCore/qurl.h:
+
+/usr/include/qt6/QtWidgets/qframe.h:
+
+/usr/include/qt6/QtWidgets/QLabel:
+
+/usr/include/qt6/QtWidgets/qboxlayout.h:
+
+../movelabel.h:
 
 /usr/include/qt6/QtGui/qbitmap.h:
 
@@ -2984,6 +3032,8 @@ move_autogen/mocs_compilation.cpp:
 /usr/include/qt6/QtGui/qrgb.h:
 
 /usr/include/c++/10/pstl/glue_algorithm_defs.h:
+
+/usr/include/qt6/QtWidgets/QMenu:
 
 /usr/include/qt6/QtCore/qiodevicebase.h:
 
@@ -3387,9 +3437,9 @@ move_autogen/include/ui_findform.h:
 
 /usr/include/bits/libc-header-start.h:
 
-/usr/include/qt6/QtCore/qiodevice.h:
-
 /usr/include/qt6/QtWidgets/qtableview.h:
+
+/usr/include/qt6/QtCore/qiodevice.h:
 
 /usr/include/qt6/QtCore/qtaggedpointer.h:
 
@@ -3730,6 +3780,8 @@ move_autogen/include/ui_movecard.h:
 /usr/include/bits/cpu-set.h:
 
 /usr/include/qt6/QtWidgets/qmessagebox.h:
+
+/usr/include/qt6/QtGui/QAction:
 
 /usr/include/c++/10/bits/string_view.tcc:
 

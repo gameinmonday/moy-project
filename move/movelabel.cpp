@@ -9,6 +9,7 @@ MoveLabel::MoveLabel(QWidget *parent)
 void MoveLabel::drawPixmap(QPixmap p_pix)
 {
     pix = p_pix;
+
     setPixmap(pix.scaled(112,150));
 }
 
