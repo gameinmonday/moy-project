@@ -57,8 +57,12 @@ private:
     MoveLabel *mv{};
     ResizeTableWidget *tw{};
     QVector<QString> attrVector{};
+    int currPicNum = 2;
 
     QPixmap createPixmap();
+
+private slots:
+    void nextPic();
 };
 
 #endif // MOVECARD_H

@@ -11,10 +11,14 @@ MoveCard::MoveCard(QVector<QString> topicVector,QVector<QString> attrVector, QWi
     setFixedHeight(800);
 
     mv = new MoveLabel(this);
+    mv->setFixedWidth(280);
+    mv->setStyleSheet("QLabel { background-color: yellow }");
+    connect(mv, &MoveLabel::click, this, &MoveCard::nextPic);
     mv->drawPixmap(createPixmap());
+    QPixmap pix = mv->pixmap();
     ui->gridLayout->addWidget(mv, 0,0);
     tw = new ResizeTableWidget(this);
-
+    tw->setFixedWidth(500);
 
     int attrIndex{};
     int topicIndex{};
@@ -49,6 +53,17 @@ QPixmap MoveCard::createPixmap()
     QDir dir("./img/"+attrVector[1]);
     QStringList fileList = dir.entryList();
 
-    QPixmap pix("./img/"+attrVector[1]+"/"+fileList[2]);
+    QPixmap pix("./img/"+attrVector[1]+"/"+fileList[currPicNum]);
+
     return pix;
+}
+
+void MoveCard::nextPic()
+{
+    currPicNum++;
+    QDir dir("./img/"+attrVector[1]);
+    QStringList fileList = dir.entryList();
+    if(fileList.count() <= currPicNum)
+        currPicNum = 2;
+    mv->drawPixmap(createPixmap());
 }

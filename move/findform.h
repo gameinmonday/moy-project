@@ -2,6 +2,7 @@
 #define FINDFORM_H
 
 #include <QWidget>
+#include <QListWidgetItem>
 #include "movelabel.h"
 
 namespace Ui {
@@ -19,10 +20,23 @@ public:
 private slots:
     void on_le_find_textChanged(const QString &arg1);
 
+    void on_lw_genre_itemClicked(QListWidgetItem *item);
+
+    void on_lw_year_itemClicked(QListWidgetItem *item);
+
+    void on_lw_actor_itemClicked(QListWidgetItem *item);
+
 private:
     Ui::FindForm *ui;
     void updateFilmList(const QString &subStr = "");
     QMap<int, QVector<QString>> filmTable{};
+
+    void unique(QVector<QString> &vector);
+    void split(QVector<QString> &vector);
+
+    QString filterGenre{};
+    QString filterYear{};
+    QString filterActor{};
 };
 
 #endif // FINDFORM_H

@@ -382,11 +382,30 @@ CMakeFiles/move.dir/findform.cpp.o: ../findform.cpp \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/qt6/QtGui/qcursor.h \
   /usr/include/qt6/QtGui/qbitmap.h \
+  /usr/include/qt6/QtWidgets/QListWidgetItem \
+  /usr/include/qt6/QtWidgets/qlistwidget.h \
+  /usr/include/qt6/QtWidgets/qlistview.h \
+  /usr/include/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/qt6/QtWidgets/qframe.h \
+  /usr/include/qt6/QtWidgets/qwidget.h \
+  /usr/include/qt6/QtCore/qabstractitemmodel.h \
+  /usr/include/qt6/QtCore/qitemselectionmodel.h \
+  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/qt6/QtCore/qlocale.h \
+  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/qt6/QtGui/qvalidator.h \
+  /usr/include/qt6/QtCore/qregularexpression.h \
+  /usr/include/qt6/QtWidgets/qslider.h \
+  /usr/include/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/qt6/QtWidgets/qstyle.h \
+  /usr/include/qt6/QtWidgets/qtabbar.h \
+  /usr/include/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/qt6/QtWidgets/qrubberband.h \
   ../movelabel.h \
   /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/qlabel.h \
-  /usr/include/qt6/QtWidgets/qframe.h \
-  /usr/include/qt6/QtWidgets/qwidget.h \
   /usr/include/qt6/QtGui/qpicture.h \
   /usr/include/qt6/QtCore/qiodevice.h \
   /usr/include/qt6/QtGui/qtextdocument.h \
@@ -403,7 +422,6 @@ CMakeFiles/move.dir/findform.cpp.o: ../findform.cpp \
   /usr/include/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/qt6/QtGui/qguiapplication.h \
   /usr/include/qt6/QtGui/qinputmethod.h \
-  /usr/include/qt6/QtCore/qlocale.h \
   /usr/include/qt6/QtGui/qguiapplication_platform.h \
   /usr/include/qt6/QtWidgets/QGridLayout \
   /usr/include/qt6/QtWidgets/qgridlayout.h \
@@ -413,27 +431,14 @@ CMakeFiles/move.dir/findform.cpp.o: ../findform.cpp \
   /usr/include/qt6/QtWidgets/qgridlayout.h \
   /usr/include/qt6/QtWidgets/QHeaderView \
   /usr/include/qt6/QtWidgets/qheaderview.h \
-  /usr/include/qt6/QtWidgets/qabstractitemview.h \
-  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/qt6/QtCore/qabstractitemmodel.h \
-  /usr/include/qt6/QtCore/qitemselectionmodel.h \
-  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
-  /usr/include/qt6/QtWidgets/qstyleoption.h \
-  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
-  /usr/include/qt6/QtGui/qvalidator.h \
-  /usr/include/qt6/QtCore/qregularexpression.h \
-  /usr/include/qt6/QtWidgets/qslider.h \
-  /usr/include/qt6/QtWidgets/qabstractslider.h \
-  /usr/include/qt6/QtWidgets/qstyle.h \
-  /usr/include/qt6/QtWidgets/qtabbar.h \
-  /usr/include/qt6/QtWidgets/qtabwidget.h \
-  /usr/include/qt6/QtWidgets/qrubberband.h \
+  /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/QLineEdit \
   /usr/include/qt6/QtWidgets/qlineedit.h \
   /usr/include/qt6/QtGui/qtextcursor.h \
   /usr/include/qt6/QtGui/qtextformat.h \
   /usr/include/qt6/QtGui/qpen.h \
   /usr/include/qt6/QtGui/qtextoption.h \
+  /usr/include/qt6/QtWidgets/QListWidget \
   /usr/include/qt6/QtWidgets/QTableWidget \
   /usr/include/qt6/QtWidgets/qtablewidget.h \
   /usr/include/qt6/QtWidgets/qtableview.h \
@@ -872,6 +877,24 @@ CMakeFiles/move.dir/main.cpp.o: ../main.cpp \
   ../findform.h \
   /usr/include/qt6/QtWidgets/QWidget \
   /usr/include/qt6/QtWidgets/qwidget.h \
+  /usr/include/qt6/QtWidgets/QListWidgetItem \
+  /usr/include/qt6/QtWidgets/qlistwidget.h \
+  /usr/include/qt6/QtWidgets/qlistview.h \
+  /usr/include/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/qt6/QtCore/qabstractitemmodel.h \
+  /usr/include/qt6/QtCore/qitemselectionmodel.h \
+  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/qt6/QtCore/qlocale.h \
+  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/qt6/QtGui/qvalidator.h \
+  /usr/include/qt6/QtCore/qregularexpression.h \
+  /usr/include/qt6/QtWidgets/qslider.h \
+  /usr/include/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/qt6/QtWidgets/qstyle.h \
+  /usr/include/qt6/QtWidgets/qtabbar.h \
+  /usr/include/qt6/QtWidgets/qrubberband.h \
   ../movecard.h \
   /usr/include/qt6/QtCore/QDir \
   /usr/include/qt6/QtCore/qdir.h \
@@ -912,24 +935,9 @@ CMakeFiles/move.dir/main.cpp.o: ../main.cpp \
   /usr/include/qt6/QtCore/qfileinfo.h \
   /usr/include/qt6/QtCore/qdatetime.h \
   /usr/include/qt6/QtCore/qcalendar.h \
-  /usr/include/qt6/QtCore/qlocale.h \
   /usr/include/qt6/QtWidgets/QTableWidget \
   /usr/include/qt6/QtWidgets/qtablewidget.h \
   /usr/include/qt6/QtWidgets/qtableview.h \
-  /usr/include/qt6/QtWidgets/qabstractitemview.h \
-  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/qt6/QtCore/qabstractitemmodel.h \
-  /usr/include/qt6/QtCore/qitemselectionmodel.h \
-  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
-  /usr/include/qt6/QtWidgets/qstyleoption.h \
-  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
-  /usr/include/qt6/QtGui/qvalidator.h \
-  /usr/include/qt6/QtCore/qregularexpression.h \
-  /usr/include/qt6/QtWidgets/qslider.h \
-  /usr/include/qt6/QtWidgets/qabstractslider.h \
-  /usr/include/qt6/QtWidgets/qstyle.h \
-  /usr/include/qt6/QtWidgets/qtabbar.h \
-  /usr/include/qt6/QtWidgets/qrubberband.h \
   /usr/include/qt6/QtWidgets/QHeaderView \
   /usr/include/qt6/QtWidgets/qheaderview.h \
   /usr/include/qt6/QtWidgets/QApplication \
@@ -1337,6 +1345,24 @@ CMakeFiles/move.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   ../findform.h \
   /usr/include/qt6/QtWidgets/QWidget \
   /usr/include/qt6/QtWidgets/qwidget.h \
+  /usr/include/qt6/QtWidgets/QListWidgetItem \
+  /usr/include/qt6/QtWidgets/qlistwidget.h \
+  /usr/include/qt6/QtWidgets/qlistview.h \
+  /usr/include/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/qt6/QtCore/qabstractitemmodel.h \
+  /usr/include/qt6/QtCore/qitemselectionmodel.h \
+  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/qt6/QtCore/qlocale.h \
+  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/qt6/QtGui/qvalidator.h \
+  /usr/include/qt6/QtCore/qregularexpression.h \
+  /usr/include/qt6/QtWidgets/qslider.h \
+  /usr/include/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/qt6/QtWidgets/qstyle.h \
+  /usr/include/qt6/QtWidgets/qtabbar.h \
+  /usr/include/qt6/QtWidgets/qrubberband.h \
   ../movecard.h \
   /usr/include/qt6/QtCore/QDir \
   /usr/include/qt6/QtCore/qdir.h \
@@ -1377,24 +1403,9 @@ CMakeFiles/move.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /usr/include/qt6/QtCore/qfileinfo.h \
   /usr/include/qt6/QtCore/qdatetime.h \
   /usr/include/qt6/QtCore/qcalendar.h \
-  /usr/include/qt6/QtCore/qlocale.h \
   /usr/include/qt6/QtWidgets/QTableWidget \
   /usr/include/qt6/QtWidgets/qtablewidget.h \
   /usr/include/qt6/QtWidgets/qtableview.h \
-  /usr/include/qt6/QtWidgets/qabstractitemview.h \
-  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/qt6/QtCore/qabstractitemmodel.h \
-  /usr/include/qt6/QtCore/qitemselectionmodel.h \
-  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
-  /usr/include/qt6/QtWidgets/qstyleoption.h \
-  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
-  /usr/include/qt6/QtGui/qvalidator.h \
-  /usr/include/qt6/QtCore/qregularexpression.h \
-  /usr/include/qt6/QtWidgets/qslider.h \
-  /usr/include/qt6/QtWidgets/qabstractslider.h \
-  /usr/include/qt6/QtWidgets/qstyle.h \
-  /usr/include/qt6/QtWidgets/qtabbar.h \
-  /usr/include/qt6/QtWidgets/qrubberband.h \
   /usr/include/qt6/QtWidgets/QHeaderView \
   /usr/include/qt6/QtWidgets/qheaderview.h \
   move_autogen/include/ui_mainwindow.h \
@@ -1835,11 +1846,30 @@ CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o: move_autogen/mocs_compi
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/qt6/QtGui/qcursor.h \
   /usr/include/qt6/QtGui/qbitmap.h \
+  /usr/include/qt6/QtWidgets/QListWidgetItem \
+  /usr/include/qt6/QtWidgets/qlistwidget.h \
+  /usr/include/qt6/QtWidgets/qlistview.h \
+  /usr/include/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/qt6/QtWidgets/qframe.h \
+  /usr/include/qt6/QtWidgets/qwidget.h \
+  /usr/include/qt6/QtCore/qabstractitemmodel.h \
+  /usr/include/qt6/QtCore/qitemselectionmodel.h \
+  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/qt6/QtCore/qlocale.h \
+  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/qt6/QtGui/qvalidator.h \
+  /usr/include/qt6/QtCore/qregularexpression.h \
+  /usr/include/qt6/QtWidgets/qslider.h \
+  /usr/include/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/qt6/QtWidgets/qstyle.h \
+  /usr/include/qt6/QtWidgets/qtabbar.h \
+  /usr/include/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/qt6/QtWidgets/qrubberband.h \
   ../movelabel.h \
   /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/qlabel.h \
-  /usr/include/qt6/QtWidgets/qframe.h \
-  /usr/include/qt6/QtWidgets/qwidget.h \
   /usr/include/qt6/QtGui/qpicture.h \
   /usr/include/qt6/QtCore/qiodevice.h \
   /usr/include/qt6/QtGui/qtextdocument.h \
@@ -1852,7 +1882,6 @@ CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o: move_autogen/mocs_compi
   ../mainwindow.h \
   /usr/include/qt6/QtWidgets/QMainWindow \
   /usr/include/qt6/QtWidgets/qmainwindow.h \
-  /usr/include/qt6/QtWidgets/qtabwidget.h \
   ../findform.h \
   ../movecard.h \
   /usr/include/qt6/QtCore/QDir \
@@ -1894,24 +1923,9 @@ CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o: move_autogen/mocs_compi
   /usr/include/qt6/QtCore/qfileinfo.h \
   /usr/include/qt6/QtCore/qdatetime.h \
   /usr/include/qt6/QtCore/qcalendar.h \
-  /usr/include/qt6/QtCore/qlocale.h \
   /usr/include/qt6/QtWidgets/QTableWidget \
   /usr/include/qt6/QtWidgets/qtablewidget.h \
   /usr/include/qt6/QtWidgets/qtableview.h \
-  /usr/include/qt6/QtWidgets/qabstractitemview.h \
-  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/qt6/QtCore/qabstractitemmodel.h \
-  /usr/include/qt6/QtCore/qitemselectionmodel.h \
-  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
-  /usr/include/qt6/QtWidgets/qstyleoption.h \
-  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
-  /usr/include/qt6/QtGui/qvalidator.h \
-  /usr/include/qt6/QtCore/qregularexpression.h \
-  /usr/include/qt6/QtWidgets/qslider.h \
-  /usr/include/qt6/QtWidgets/qabstractslider.h \
-  /usr/include/qt6/QtWidgets/qstyle.h \
-  /usr/include/qt6/QtWidgets/qtabbar.h \
-  /usr/include/qt6/QtWidgets/qrubberband.h \
   /usr/include/qt6/QtWidgets/QHeaderView \
   /usr/include/qt6/QtWidgets/qheaderview.h \
   move_autogen/EWIEGA46WW/moc_movecard.cpp \
@@ -2839,8 +2853,6 @@ move_autogen/include/ui_mainwindow.h:
 
 /usr/include/c++/10/bits/locale_facets.h:
 
-/usr/include/c++/10/filesystem:
-
 /usr/include/qt6/QtWidgets/QToolButton:
 
 /usr/include/qt6/QtCore/qfile.h:
@@ -2853,21 +2865,7 @@ move_autogen/include/ui_mainwindow.h:
 
 /usr/include/qt6/QtWidgets/QLineEdit:
 
-/usr/include/qt6/QtWidgets/qtabbar.h:
-
-/usr/include/qt6/QtWidgets/qstyle.h:
-
-/usr/include/qt6/QtWidgets/qslider.h:
-
-/usr/include/qt6/QtWidgets/qstyleoption.h:
-
-/usr/include/qt6/QtWidgets/qabstractitemdelegate.h:
-
-/usr/include/qt6/QtCore/qabstractitemmodel.h:
-
 /usr/include/qt6/QtWidgets/QHeaderView:
-
-/usr/include/qt6/QtCore/qlocale.h:
 
 /usr/include/qt6/QtGui/qinputmethod.h:
 
@@ -2883,13 +2881,33 @@ move_autogen/mocs_compilation.cpp:
 
 /usr/include/qt6/QtCore/qurl.h:
 
-/usr/include/qt6/QtWidgets/qframe.h:
-
 /usr/include/qt6/QtWidgets/QLabel:
 
 /usr/include/qt6/QtWidgets/qboxlayout.h:
 
 ../movelabel.h:
+
+/usr/include/qt6/QtWidgets/qtabbar.h:
+
+/usr/include/qt6/QtWidgets/qstyle.h:
+
+/usr/include/qt6/QtWidgets/qslider.h:
+
+/usr/include/qt6/QtCore/qlocale.h:
+
+/usr/include/qt6/QtWidgets/qstyleoption.h:
+
+/usr/include/qt6/QtWidgets/qabstractitemdelegate.h:
+
+/usr/include/qt6/QtCore/qabstractitemmodel.h:
+
+/usr/include/qt6/QtWidgets/qframe.h:
+
+/usr/include/qt6/QtWidgets/qlistview.h:
+
+/usr/include/c++/10/filesystem:
+
+/usr/include/qt6/QtWidgets/qlistwidget.h:
 
 /usr/include/qt6/QtGui/qbitmap.h:
 
@@ -3098,6 +3116,8 @@ move_autogen/mocs_compilation.cpp:
 /usr/include/qt6/QtWidgets/QMenuBar:
 
 /usr/include/libintl.h:
+
+/usr/include/qt6/QtWidgets/QListWidget:
 
 /usr/include/bits/endianness.h:
 
@@ -3550,6 +3570,8 @@ move_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/bits/types/struct_timespec.h:
 
 /usr/include/qt6/QtWidgets/qheaderview.h:
+
+/usr/include/qt6/QtWidgets/QListWidgetItem:
 
 /usr/include/bits/pthreadtypes.h:
 

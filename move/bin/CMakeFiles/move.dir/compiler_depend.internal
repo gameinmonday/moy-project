@@ -383,11 +383,30 @@ CMakeFiles/move.dir/findform.cpp.o
  /usr/include/qt6/QtWidgets/qsizepolicy.h
  /usr/include/qt6/QtGui/qcursor.h
  /usr/include/qt6/QtGui/qbitmap.h
+ /usr/include/qt6/QtWidgets/QListWidgetItem
+ /usr/include/qt6/QtWidgets/qlistwidget.h
+ /usr/include/qt6/QtWidgets/qlistview.h
+ /usr/include/qt6/QtWidgets/qabstractitemview.h
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h
+ /usr/include/qt6/QtWidgets/qframe.h
+ /usr/include/qt6/QtWidgets/qwidget.h
+ /usr/include/qt6/QtCore/qabstractitemmodel.h
+ /usr/include/qt6/QtCore/qitemselectionmodel.h
+ /usr/include/qt6/QtWidgets/qabstractitemdelegate.h
+ /usr/include/qt6/QtWidgets/qstyleoption.h
+ /usr/include/qt6/QtCore/qlocale.h
+ /usr/include/qt6/QtWidgets/qabstractspinbox.h
+ /usr/include/qt6/QtGui/qvalidator.h
+ /usr/include/qt6/QtCore/qregularexpression.h
+ /usr/include/qt6/QtWidgets/qslider.h
+ /usr/include/qt6/QtWidgets/qabstractslider.h
+ /usr/include/qt6/QtWidgets/qstyle.h
+ /usr/include/qt6/QtWidgets/qtabbar.h
+ /usr/include/qt6/QtWidgets/qtabwidget.h
+ /usr/include/qt6/QtWidgets/qrubberband.h
  /home/repetitor/_QtProjects/move/movelabel.h
  /usr/include/qt6/QtWidgets/QLabel
  /usr/include/qt6/QtWidgets/qlabel.h
- /usr/include/qt6/QtWidgets/qframe.h
- /usr/include/qt6/QtWidgets/qwidget.h
  /usr/include/qt6/QtGui/qpicture.h
  /usr/include/qt6/QtCore/qiodevice.h
  /usr/include/qt6/QtGui/qtextdocument.h
@@ -404,7 +423,6 @@ CMakeFiles/move.dir/findform.cpp.o
  /usr/include/qt6/QtCore/qcoreapplication_platform.h
  /usr/include/qt6/QtGui/qguiapplication.h
  /usr/include/qt6/QtGui/qinputmethod.h
- /usr/include/qt6/QtCore/qlocale.h
  /usr/include/qt6/QtGui/qguiapplication_platform.h
  /usr/include/qt6/QtWidgets/QGridLayout
  /usr/include/qt6/QtWidgets/qgridlayout.h
@@ -414,27 +432,14 @@ CMakeFiles/move.dir/findform.cpp.o
  /usr/include/qt6/QtWidgets/qgridlayout.h
  /usr/include/qt6/QtWidgets/QHeaderView
  /usr/include/qt6/QtWidgets/qheaderview.h
- /usr/include/qt6/QtWidgets/qabstractitemview.h
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h
- /usr/include/qt6/QtCore/qabstractitemmodel.h
- /usr/include/qt6/QtCore/qitemselectionmodel.h
- /usr/include/qt6/QtWidgets/qabstractitemdelegate.h
- /usr/include/qt6/QtWidgets/qstyleoption.h
- /usr/include/qt6/QtWidgets/qabstractspinbox.h
- /usr/include/qt6/QtGui/qvalidator.h
- /usr/include/qt6/QtCore/qregularexpression.h
- /usr/include/qt6/QtWidgets/qslider.h
- /usr/include/qt6/QtWidgets/qabstractslider.h
- /usr/include/qt6/QtWidgets/qstyle.h
- /usr/include/qt6/QtWidgets/qtabbar.h
- /usr/include/qt6/QtWidgets/qtabwidget.h
- /usr/include/qt6/QtWidgets/qrubberband.h
+ /usr/include/qt6/QtWidgets/QLabel
  /usr/include/qt6/QtWidgets/QLineEdit
  /usr/include/qt6/QtWidgets/qlineedit.h
  /usr/include/qt6/QtGui/qtextcursor.h
  /usr/include/qt6/QtGui/qtextformat.h
  /usr/include/qt6/QtGui/qpen.h
  /usr/include/qt6/QtGui/qtextoption.h
+ /usr/include/qt6/QtWidgets/QListWidget
  /usr/include/qt6/QtWidgets/QTableWidget
  /usr/include/qt6/QtWidgets/qtablewidget.h
  /usr/include/qt6/QtWidgets/qtableview.h
@@ -874,6 +879,24 @@ CMakeFiles/move.dir/main.cpp.o
  /home/repetitor/_QtProjects/move/findform.h
  /usr/include/qt6/QtWidgets/QWidget
  /usr/include/qt6/QtWidgets/qwidget.h
+ /usr/include/qt6/QtWidgets/QListWidgetItem
+ /usr/include/qt6/QtWidgets/qlistwidget.h
+ /usr/include/qt6/QtWidgets/qlistview.h
+ /usr/include/qt6/QtWidgets/qabstractitemview.h
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h
+ /usr/include/qt6/QtCore/qabstractitemmodel.h
+ /usr/include/qt6/QtCore/qitemselectionmodel.h
+ /usr/include/qt6/QtWidgets/qabstractitemdelegate.h
+ /usr/include/qt6/QtWidgets/qstyleoption.h
+ /usr/include/qt6/QtCore/qlocale.h
+ /usr/include/qt6/QtWidgets/qabstractspinbox.h
+ /usr/include/qt6/QtGui/qvalidator.h
+ /usr/include/qt6/QtCore/qregularexpression.h
+ /usr/include/qt6/QtWidgets/qslider.h
+ /usr/include/qt6/QtWidgets/qabstractslider.h
+ /usr/include/qt6/QtWidgets/qstyle.h
+ /usr/include/qt6/QtWidgets/qtabbar.h
+ /usr/include/qt6/QtWidgets/qrubberband.h
  /home/repetitor/_QtProjects/move/movecard.h
  /usr/include/qt6/QtCore/QDir
  /usr/include/qt6/QtCore/qdir.h
@@ -914,24 +937,9 @@ CMakeFiles/move.dir/main.cpp.o
  /usr/include/qt6/QtCore/qfileinfo.h
  /usr/include/qt6/QtCore/qdatetime.h
  /usr/include/qt6/QtCore/qcalendar.h
- /usr/include/qt6/QtCore/qlocale.h
  /usr/include/qt6/QtWidgets/QTableWidget
  /usr/include/qt6/QtWidgets/qtablewidget.h
  /usr/include/qt6/QtWidgets/qtableview.h
- /usr/include/qt6/QtWidgets/qabstractitemview.h
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h
- /usr/include/qt6/QtCore/qabstractitemmodel.h
- /usr/include/qt6/QtCore/qitemselectionmodel.h
- /usr/include/qt6/QtWidgets/qabstractitemdelegate.h
- /usr/include/qt6/QtWidgets/qstyleoption.h
- /usr/include/qt6/QtWidgets/qabstractspinbox.h
- /usr/include/qt6/QtGui/qvalidator.h
- /usr/include/qt6/QtCore/qregularexpression.h
- /usr/include/qt6/QtWidgets/qslider.h
- /usr/include/qt6/QtWidgets/qabstractslider.h
- /usr/include/qt6/QtWidgets/qstyle.h
- /usr/include/qt6/QtWidgets/qtabbar.h
- /usr/include/qt6/QtWidgets/qrubberband.h
  /usr/include/qt6/QtWidgets/QHeaderView
  /usr/include/qt6/QtWidgets/qheaderview.h
  /usr/include/qt6/QtWidgets/QApplication
@@ -1340,6 +1348,24 @@ CMakeFiles/move.dir/mainwindow.cpp.o
  /home/repetitor/_QtProjects/move/findform.h
  /usr/include/qt6/QtWidgets/QWidget
  /usr/include/qt6/QtWidgets/qwidget.h
+ /usr/include/qt6/QtWidgets/QListWidgetItem
+ /usr/include/qt6/QtWidgets/qlistwidget.h
+ /usr/include/qt6/QtWidgets/qlistview.h
+ /usr/include/qt6/QtWidgets/qabstractitemview.h
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h
+ /usr/include/qt6/QtCore/qabstractitemmodel.h
+ /usr/include/qt6/QtCore/qitemselectionmodel.h
+ /usr/include/qt6/QtWidgets/qabstractitemdelegate.h
+ /usr/include/qt6/QtWidgets/qstyleoption.h
+ /usr/include/qt6/QtCore/qlocale.h
+ /usr/include/qt6/QtWidgets/qabstractspinbox.h
+ /usr/include/qt6/QtGui/qvalidator.h
+ /usr/include/qt6/QtCore/qregularexpression.h
+ /usr/include/qt6/QtWidgets/qslider.h
+ /usr/include/qt6/QtWidgets/qabstractslider.h
+ /usr/include/qt6/QtWidgets/qstyle.h
+ /usr/include/qt6/QtWidgets/qtabbar.h
+ /usr/include/qt6/QtWidgets/qrubberband.h
  /home/repetitor/_QtProjects/move/movecard.h
  /usr/include/qt6/QtCore/QDir
  /usr/include/qt6/QtCore/qdir.h
@@ -1380,24 +1406,9 @@ CMakeFiles/move.dir/mainwindow.cpp.o
  /usr/include/qt6/QtCore/qfileinfo.h
  /usr/include/qt6/QtCore/qdatetime.h
  /usr/include/qt6/QtCore/qcalendar.h
- /usr/include/qt6/QtCore/qlocale.h
  /usr/include/qt6/QtWidgets/QTableWidget
  /usr/include/qt6/QtWidgets/qtablewidget.h
  /usr/include/qt6/QtWidgets/qtableview.h
- /usr/include/qt6/QtWidgets/qabstractitemview.h
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h
- /usr/include/qt6/QtCore/qabstractitemmodel.h
- /usr/include/qt6/QtCore/qitemselectionmodel.h
- /usr/include/qt6/QtWidgets/qabstractitemdelegate.h
- /usr/include/qt6/QtWidgets/qstyleoption.h
- /usr/include/qt6/QtWidgets/qabstractspinbox.h
- /usr/include/qt6/QtGui/qvalidator.h
- /usr/include/qt6/QtCore/qregularexpression.h
- /usr/include/qt6/QtWidgets/qslider.h
- /usr/include/qt6/QtWidgets/qabstractslider.h
- /usr/include/qt6/QtWidgets/qstyle.h
- /usr/include/qt6/QtWidgets/qtabbar.h
- /usr/include/qt6/QtWidgets/qrubberband.h
  /usr/include/qt6/QtWidgets/QHeaderView
  /usr/include/qt6/QtWidgets/qheaderview.h
  /home/repetitor/_QtProjects/move/bin/move_autogen/include/ui_mainwindow.h
@@ -1840,11 +1851,30 @@ CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o
  /usr/include/qt6/QtWidgets/qsizepolicy.h
  /usr/include/qt6/QtGui/qcursor.h
  /usr/include/qt6/QtGui/qbitmap.h
+ /usr/include/qt6/QtWidgets/QListWidgetItem
+ /usr/include/qt6/QtWidgets/qlistwidget.h
+ /usr/include/qt6/QtWidgets/qlistview.h
+ /usr/include/qt6/QtWidgets/qabstractitemview.h
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h
+ /usr/include/qt6/QtWidgets/qframe.h
+ /usr/include/qt6/QtWidgets/qwidget.h
+ /usr/include/qt6/QtCore/qabstractitemmodel.h
+ /usr/include/qt6/QtCore/qitemselectionmodel.h
+ /usr/include/qt6/QtWidgets/qabstractitemdelegate.h
+ /usr/include/qt6/QtWidgets/qstyleoption.h
+ /usr/include/qt6/QtCore/qlocale.h
+ /usr/include/qt6/QtWidgets/qabstractspinbox.h
+ /usr/include/qt6/QtGui/qvalidator.h
+ /usr/include/qt6/QtCore/qregularexpression.h
+ /usr/include/qt6/QtWidgets/qslider.h
+ /usr/include/qt6/QtWidgets/qabstractslider.h
+ /usr/include/qt6/QtWidgets/qstyle.h
+ /usr/include/qt6/QtWidgets/qtabbar.h
+ /usr/include/qt6/QtWidgets/qtabwidget.h
+ /usr/include/qt6/QtWidgets/qrubberband.h
  /home/repetitor/_QtProjects/move/movelabel.h
  /usr/include/qt6/QtWidgets/QLabel
  /usr/include/qt6/QtWidgets/qlabel.h
- /usr/include/qt6/QtWidgets/qframe.h
- /usr/include/qt6/QtWidgets/qwidget.h
  /usr/include/qt6/QtGui/qpicture.h
  /usr/include/qt6/QtCore/qiodevice.h
  /usr/include/qt6/QtGui/qtextdocument.h
@@ -1857,7 +1887,6 @@ CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o
  /home/repetitor/_QtProjects/move/mainwindow.h
  /usr/include/qt6/QtWidgets/QMainWindow
  /usr/include/qt6/QtWidgets/qmainwindow.h
- /usr/include/qt6/QtWidgets/qtabwidget.h
  /home/repetitor/_QtProjects/move/findform.h
  /home/repetitor/_QtProjects/move/movecard.h
  /usr/include/qt6/QtCore/QDir
@@ -1899,24 +1928,9 @@ CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o
  /usr/include/qt6/QtCore/qfileinfo.h
  /usr/include/qt6/QtCore/qdatetime.h
  /usr/include/qt6/QtCore/qcalendar.h
- /usr/include/qt6/QtCore/qlocale.h
  /usr/include/qt6/QtWidgets/QTableWidget
  /usr/include/qt6/QtWidgets/qtablewidget.h
  /usr/include/qt6/QtWidgets/qtableview.h
- /usr/include/qt6/QtWidgets/qabstractitemview.h
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h
- /usr/include/qt6/QtCore/qabstractitemmodel.h
- /usr/include/qt6/QtCore/qitemselectionmodel.h
- /usr/include/qt6/QtWidgets/qabstractitemdelegate.h
- /usr/include/qt6/QtWidgets/qstyleoption.h
- /usr/include/qt6/QtWidgets/qabstractspinbox.h
- /usr/include/qt6/QtGui/qvalidator.h
- /usr/include/qt6/QtCore/qregularexpression.h
- /usr/include/qt6/QtWidgets/qslider.h
- /usr/include/qt6/QtWidgets/qabstractslider.h
- /usr/include/qt6/QtWidgets/qstyle.h
- /usr/include/qt6/QtWidgets/qtabbar.h
- /usr/include/qt6/QtWidgets/qrubberband.h
  /usr/include/qt6/QtWidgets/QHeaderView
  /usr/include/qt6/QtWidgets/qheaderview.h
  /home/repetitor/_QtProjects/move/bin/move_autogen/EWIEGA46WW/moc_movecard.cpp
