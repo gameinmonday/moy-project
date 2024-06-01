@@ -13,6 +13,10 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+
+    mainFilm = new MoveLabel(this);
+    ui->horizontalLayout->addWidget(mainFilm,0);
+
     QDir dir("./img/");
     imgPathList = dir.entryList();
     QString fileName = QFileDialog::getOpenFileName(this,
@@ -21,16 +25,37 @@ MainWindow::MainWindow(QWidget *parent)
     readCsv(fileName);
 
     std::uniform_real_distribution<> dist(0,filmTable[1].count()-1);
-    ui->l_mainFilm->setText(filmTable[1][dist(*QRandomGenerator::global())]);
-    ui->l_mainFilm->setToolTip(ui->l_mainFilm->text());
+    mainFilm->setText(filmTable[1][dist(*QRandomGenerator::global())]);
+    mainFilm->setToolTip(mainFilm->text());
 
-    dir.setPath("./img/"+ui->l_mainFilm->text());
+
+
+    dir.setPath("./img/"+mainFilm->text());
     fileList = dir.entryList();
 
-    connect(ui->toolButton, &QToolButton::clicked, this, [&](){
-
-    });
     ff = new FindForm(filmTable);
+    connect(mainFilm, &MoveLabel::click, this, [&](){
+        if(fileList.count() <= currPicNum)
+            currPicNum = 2;
+        QPixmap pix("./img/"+mainFilm->toolTip()+"/"+fileList[currPicNum]);
+        QSize pixSize = pix.size();
+        QSize newSize{};
+        if(pixSize.width() > pixSize.height())
+        {
+            newSize.setWidth(width());
+            newSize.setHeight(((double)width()/pixSize.width())*pixSize.height());
+        }
+        else
+        {
+            newSize.setWidth((300.0/pixSize.height())*pixSize.width());
+            newSize.setHeight(300);
+        }
+
+        mainFilm->setFixedSize(newSize);
+        mainFilm->setAlignment(Qt::AlignCenter);
+        mainFilm->setPixmap(pix.scaled(newSize,Qt::IgnoreAspectRatio, Qt::SmoothTransformation));
+        currPicNum++;
+    });
 }
 
 
@@ -73,7 +98,7 @@ void MainWindow::processMoveMarix()
 
                 QPixmap pix("./img/"+mv->text()+"/"+fileList[2]);
                 if(pix.width() && pix.height())
-                    mv->drawPixmap(pix);
+                    mv->drawPixmap(pix.scaled(112,150));
                 else
                     qDebug() << "Пустой рисунок" << "./img/"+mv->text()+"/"+fileList[2];
 
@@ -84,7 +109,7 @@ void MainWindow::processMoveMarix()
                     QVector<QString> moveParams{};
                     moveParams << filmTable[0][moveIndex] << filmTable[1][moveIndex] << filmTable[2][moveIndex] << filmTable[3][moveIndex] <<
                         filmTable[4][moveIndex] << filmTable[5][moveIndex] << filmTable[6][moveIndex] << filmTable[7][moveIndex] << filmTable[8][moveIndex]
-                               << filmTable[9][moveIndex] << filmTable[10][moveIndex] << filmTable[11][moveIndex];
+                               << filmTable[9][moveIndex] << filmTable[10][moveIndex] << filmTable[11][moveIndex]<<filmTable[12][moveIndex];
                     MoveCard *mc = new MoveCard(topicVector,moveParams);
                     mc->show();
                 });
@@ -155,7 +180,6 @@ void MainWindow::readCsv(QString fileAddress)
                 QVector<QString> v{};
                 topicVector << item;
                 filmTable.insert(colIndex++,v);
-
             }
             else
             {
@@ -172,31 +196,29 @@ void MainWindow::resizeEvent(QResizeEvent *)
     int imageNum = 3;
     while(fileList.count() > imageNum)
     {
-
-        QPixmap pix("./img/"+ui->l_mainFilm->toolTip()+"/"+fileList[imageNum]);        
+        QPixmap pix("./img/"+mainFilm->toolTip()+"/"+fileList[imageNum]);
         QSize pixSize = pix.size();
 
 
         if(pix.width())
         {
-            if(!ui->l_mainFilm->pixmap().width())
+            if(!mainFilm->pixmap().width())
             {
                 QSize newSize (width(), ((double)width()/pixSize.width())*pixSize.height());
-                ui->l_mainFilm->setFixedSize(newSize);
-                ui->l_mainFilm->setAlignment(Qt::AlignCenter);
-                ui->l_mainFilm->setPixmap(pix.scaled(newSize,Qt::IgnoreAspectRatio, Qt::SmoothTransformation));
+                mainFilm->setFixedSize(newSize);
+                mainFilm->setAlignment(Qt::AlignCenter);
+                mainFilm->setPixmap(pix.scaled(newSize,Qt::IgnoreAspectRatio, Qt::SmoothTransformation));
             }
             else
             {
-                QSize newSize (width(), ui->l_mainFilm->pixmap().height());
-                ui->l_mainFilm->setFixedSize(newSize);
-                //ui->l_mainFilm->setAlignment(Qt::AlignCenter);
+                QSize newSize (width(), mainFilm->pixmap().height());
+                mainFilm->setFixedSize(newSize);
+                //mainFilm->setAlignment(Qt::AlignCenter);
             }
             break;
         }
         imageNum++;
     }
-
 }
 
 
@@ -204,7 +226,7 @@ void MainWindow::resizeEvent(QResizeEvent *)
 
 void MainWindow::on_toolButton_clicked()
 {
-    //ui->l_mainFilm->setText("ГЛАВНЫЙ ФИЛЬМ");
+    //mainFilm->setText("ГЛАВНЫЙ ФИЛЬМ");
 }
 
 

@@ -10,7 +10,7 @@ void MoveLabel::drawPixmap(QPixmap p_pix)
 {
     pix = p_pix;
 
-    setPixmap(pix/*.scaled(112,150)*/);
+    setPixmap(pix);
 }
 
 void MoveLabel::setMoveName(QString p_moveName)

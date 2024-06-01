@@ -49,7 +49,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 23,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
@@ -73,13 +73,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 65,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 48,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
@@ -340,7 +340,8 @@
 				2,
 				6,
 				9,
-				13
+				12,
+				17
 			]
 		}
 	],
@@ -429,7 +430,8 @@
 				2,
 				6,
 				9,
-				13
+				12,
+				17
 			]
 		},
 		{
@@ -440,7 +442,9 @@
 				5,
 				8,
 				11,
-				12
+				14,
+				15,
+				16
 			]
 		},
 		{
@@ -449,14 +453,15 @@
 			[
 				4,
 				7,
-				10
+				10,
+				13
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				14
+				18
 			]
 		}
 	],
@@ -524,6 +529,22 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"path" : "movecard.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "movecard.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "movecard.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "bin/move_autogen/include/ui_mainwindow.h",
@@ -533,6 +554,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "bin/move_autogen/include/ui_findform.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "bin/move_autogen/include/ui_movecard.h",
 			"sourceGroupIndex" : 1
 		},
 		{

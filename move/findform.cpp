@@ -119,7 +119,7 @@ void FindForm::updateFilmList(const QString &subStr)
 
         QPixmap pix("./img/"+filmTable[1][filmIndex]+"/"+fileList[2]);
         if(pix.width() && pix.height()) {
-            mv->drawPixmap(pix);
+            mv->drawPixmap(pix.scaled(112,150));
             ui->tw_filmList->setRowHeight(newRowNum, 150);
             ui->tw_filmList->setColumnWidth(1, 112);
         }

@@ -21,7 +21,7 @@ public:
         horizontalHeader()->setVisible(false);
         verticalHeader()->setVisible(false);
         setColumnCount(2);
-        setRowCount(12);
+        setRowCount(13);
         setStyleSheet("QTableWidget {border: 2px outset red;}");
         setSelectionMode(QAbstractItemView::NoSelection);
     }

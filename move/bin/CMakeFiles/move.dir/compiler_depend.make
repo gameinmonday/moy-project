@@ -1431,7 +1431,6 @@ CMakeFiles/move.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /usr/include/qt6/QtWidgets/qgridlayout.h \
   /usr/include/qt6/QtWidgets/QHBoxLayout \
   /usr/include/qt6/QtWidgets/qboxlayout.h \
-  /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/QMainWindow \
   /usr/include/qt6/QtWidgets/QMenu \
   /usr/include/qt6/QtWidgets/qmenu.h \
@@ -1440,9 +1439,6 @@ CMakeFiles/move.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /usr/include/qt6/QtWidgets/qmenu.h \
   /usr/include/qt6/QtWidgets/QStatusBar \
   /usr/include/qt6/QtWidgets/qstatusbar.h \
-  /usr/include/qt6/QtWidgets/QToolButton \
-  /usr/include/qt6/QtWidgets/qtoolbutton.h \
-  /usr/include/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/qt6/QtWidgets/QWidget \
   /usr/include/qt6/QtCore/QDebug \
   /usr/include/qt6/QtCore/qdebug.h \
@@ -2809,8 +2805,6 @@ move_autogen/EWIEGA46WW/moc_findform.cpp:
 
 /usr/include/qt6/QtCore/QDebug:
 
-/usr/include/qt6/QtWidgets/qabstractbutton.h:
-
 /usr/include/qt6/QtWidgets/qmenubar.h:
 
 move_autogen/include/ui_mainwindow.h:
@@ -2852,8 +2846,6 @@ move_autogen/include/ui_mainwindow.h:
 /usr/include/bits/wctype-wchar.h:
 
 /usr/include/c++/10/bits/locale_facets.h:
-
-/usr/include/qt6/QtWidgets/QToolButton:
 
 /usr/include/qt6/QtCore/qfile.h:
 
@@ -3806,8 +3798,6 @@ move_autogen/include/ui_movecard.h:
 /usr/include/qt6/QtGui/QAction:
 
 /usr/include/c++/10/bits/string_view.tcc:
-
-/usr/include/qt6/QtWidgets/qtoolbutton.h:
 
 /usr/include/bits/types/struct_tm.h:
 

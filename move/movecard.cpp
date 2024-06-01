@@ -12,10 +12,11 @@ MoveCard::MoveCard(QVector<QString> topicVector,QVector<QString> attrVector, QWi
 
     mv = new MoveLabel(this);
     mv->setFixedWidth(280);
-    mv->setStyleSheet("QLabel { background-color: yellow }");
     connect(mv, &MoveLabel::click, this, &MoveCard::nextPic);
-    mv->drawPixmap(createPixmap());
-    QPixmap pix = mv->pixmap();
+    QPixmap pix = createPixmap();
+    QSize pixSize = pix.size();
+    mv->drawPixmap(pix.scaled(336,(double)pixSize.height()/pixSize.width() * 336,Qt::IgnoreAspectRatio, Qt::SmoothTransformation));
+    pix = mv->pixmap();
     ui->gridLayout->addWidget(mv, 0,0);
     tw = new ResizeTableWidget(this);
     tw->setFixedWidth(500);
@@ -34,12 +35,29 @@ MoveCard::MoveCard(QVector<QString> topicVector,QVector<QString> attrVector, QWi
             }
             else
             {
-                tw->setItem(rowIndex, colIndex, new QTableWidgetItem(attrVector[attrIndex++]));
-                tw->item(rowIndex, colIndex)->setFlags(Qt::NoItemFlags);
+                if(attrIndex != 12)
+                {
+                    tw->setItem(rowIndex, colIndex, new QTableWidgetItem(attrVector[attrIndex++]));
+                    tw->item(rowIndex, colIndex)->setFlags(Qt::NoItemFlags);
+                }
+                else if(attrIndex == 12)
+                {
+                    QLabel *lb = new QLabel("<a href=\""+attrVector[attrIndex]+"\"></a>",this);
+                    lb->setTextFormat(Qt::RichText);
+                    lb->setTextInteractionFlags(Qt::TextBrowserInteraction);
+                    lb->setOpenExternalLinks(true);
+                    tw->setItem(rowIndex, colIndex, new QTableWidgetItem(attrVector[attrIndex++]));
+                }
             }
         }
     }
     ui->gridLayout->addWidget(tw,0,1);
+
+    QLabel *lb = new QLabel("<a href=\"https://www.kinopoisk.cx/film/689066/\"></a>");
+    // lb->setTextFormat(Qt::RichText);
+    // lb->setTextInteractionFlags(Qt::TextBrowserInteraction);
+    // lb->setOpenExternalLinks(true);
+    ui->gridLayout->addWidget(lb,1,1);
 
 }
 
@@ -65,5 +83,9 @@ void MoveCard::nextPic()
     QStringList fileList = dir.entryList();
     if(fileList.count() <= currPicNum)
         currPicNum = 2;
-    mv->drawPixmap(createPixmap());
+    QPixmap pix = createPixmap();
+    QSize pixSize = pix.size();
+    QSize newPixSize(336,((double)pixSize.height()/pixSize.width()) * 336);
+    mv->drawPixmap(pix.scaled(newPixSize.width(),newPixSize.height(),Qt::IgnoreAspectRatio, Qt::SmoothTransformation));
+    //mv->drawPixmap(createPixmap().scaled(112*3,150*3));
 }

@@ -33,6 +33,10 @@ private:
 
     FindForm *ff{};
 
+    MoveLabel *mainFilm{};
+
+    int currPicNum = 2;
+
 protected:
     void resizeEvent(QResizeEvent *) override;
 public slots:

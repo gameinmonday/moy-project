@@ -14,12 +14,10 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -32,11 +30,8 @@ public:
     QWidget *centralwidget;
     QGridLayout *gridLayout_3;
     QGridLayout *gridLayout;
-    QLabel *l_mainFilm;
     QGridLayout *gr_randomFilm;
     QHBoxLayout *horizontalLayout;
-    QToolButton *toolButton_2;
-    QToolButton *toolButton;
     QMenuBar *menubar;
     QMenu *menu;
     QStatusBar *statusbar;
@@ -62,34 +57,15 @@ public:
         gridLayout_3->setObjectName("gridLayout_3");
         gridLayout = new QGridLayout();
         gridLayout->setObjectName("gridLayout");
-        l_mainFilm = new QLabel(centralwidget);
-        l_mainFilm->setObjectName("l_mainFilm");
-        sizePolicy.setHeightForWidth(l_mainFilm->sizePolicy().hasHeightForWidth());
-        l_mainFilm->setSizePolicy(sizePolicy);
-        l_mainFilm->setScaledContents(false);
-        l_mainFilm->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(l_mainFilm, 1, 0, 1, 2);
-
         gr_randomFilm = new QGridLayout();
         gr_randomFilm->setObjectName("gr_randomFilm");
 
-        gridLayout->addLayout(gr_randomFilm, 2, 0, 1, 2);
+        gridLayout->addLayout(gr_randomFilm, 1, 0, 1, 2);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        toolButton_2 = new QToolButton(centralwidget);
-        toolButton_2->setObjectName("toolButton_2");
 
-        horizontalLayout->addWidget(toolButton_2);
-
-        toolButton = new QToolButton(centralwidget);
-        toolButton->setObjectName("toolButton");
-
-        horizontalLayout->addWidget(toolButton);
-
-
-        gridLayout->addLayout(horizontalLayout, 0, 1, 1, 1);
+        gridLayout->addLayout(horizontalLayout, 0, 0, 1, 2);
 
 
         gridLayout_3->addLayout(gridLayout, 0, 0, 1, 1);
@@ -119,9 +95,6 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         ac_find->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\270\321\201\320\272", nullptr));
         ac_exit->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\321\205\320\276\320\264", nullptr));
-        l_mainFilm->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        toolButton_2->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        toolButton->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273", nullptr));
     } // retranslateUi
 
