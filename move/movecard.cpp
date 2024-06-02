@@ -7,6 +7,9 @@ MoveCard::MoveCard(QVector<QString> topicVector,QVector<QString> attrVector, QWi
 {
     ui->setupUi(this);
 
+    settings = new QSettings("statictic", QSettings::IniFormat, this);
+    setWindowModality(Qt::ApplicationModal);
+
     setFixedWidth(800);
     setFixedHeight(800);
 
@@ -42,23 +45,27 @@ MoveCard::MoveCard(QVector<QString> topicVector,QVector<QString> attrVector, QWi
                 }
                 else if(attrIndex == 12)
                 {
-                    QLabel *lb = new QLabel("<a href=\""+attrVector[attrIndex]+"\"></a>",this);
-                    lb->setTextFormat(Qt::RichText);
-                    lb->setTextInteractionFlags(Qt::TextBrowserInteraction);
+                    QLabel *lb = new QLabel("<a href=\""+attrVector[attrIndex]+"\">Watch film</a>",this);
                     lb->setOpenExternalLinks(true);
-                    tw->setItem(rowIndex, colIndex, new QTableWidgetItem(attrVector[attrIndex++]));
+                    tw->setCellWidget(rowIndex, colIndex, lb);
                 }
             }
         }
     }
+    int rowNum = tw->rowCount();
+    tw->insertRow(rowNum);
+    tw->setItem(rowNum,0, new QTableWidgetItem("Rating"));
+    tw->item(rowNum, 0)->setForeground(QBrush(QColor(Qt::red)));
+
+    QSpinBox *sb = new QSpinBox(tw);
+    sb->setValue(settings->value(tw->item(1,1)->text()).toInt());
+    connect(sb, &QSpinBox::textChanged, this, [&](QString txt){
+        settings->setValue(tw->item(1,1)->text(), txt);
+    });
+    sb->setMaximum(10);
+    sb->setMinimum(0);
+    tw->setCellWidget(rowNum,1, sb);
     ui->gridLayout->addWidget(tw,0,1);
-
-    QLabel *lb = new QLabel("<a href=\"https://www.kinopoisk.cx/film/689066/\"></a>");
-    // lb->setTextFormat(Qt::RichText);
-    // lb->setTextInteractionFlags(Qt::TextBrowserInteraction);
-    // lb->setOpenExternalLinks(true);
-    ui->gridLayout->addWidget(lb,1,1);
-
 }
 
 MoveCard::~MoveCard()
@@ -68,10 +75,10 @@ MoveCard::~MoveCard()
 
 QPixmap MoveCard::createPixmap()
 {
-    QDir dir("./img/"+attrVector[1]);
+    QDir dir("/Users/dmitrijlevankov/Desktop/move /img/"+attrVector[1]);
     QStringList fileList = dir.entryList();
 
-    QPixmap pix("./img/"+attrVector[1]+"/"+fileList[currPicNum]);
+    QPixmap pix("/Users/dmitrijlevankov/Desktop/move /img/"+attrVector[1]+"/"+fileList[currPicNum]);
 
     return pix;
 }
@@ -79,7 +86,7 @@ QPixmap MoveCard::createPixmap()
 void MoveCard::nextPic()
 {
     currPicNum++;
-    QDir dir("./img/"+attrVector[1]);
+    QDir dir("/Users/dmitrijlevankov/Desktop/move /img/"+attrVector[1]);
     QStringList fileList = dir.entryList();
     if(fileList.count() <= currPicNum)
         currPicNum = 2;

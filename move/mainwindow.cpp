@@ -13,16 +13,21 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    setWindowTitle("KinoSearch");
 
     mainFilm = new MoveLabel(this);
     ui->horizontalLayout->addWidget(mainFilm,0);
 
-    QDir dir("./img/");
+
+
+    QDir dir("/Users/dmitrijlevankov/Desktop/move /img/");
     imgPathList = dir.entryList();
     QString fileName = QFileDialog::getOpenFileName(this,
-                                                    tr("Выберите CSV файл"), "", tr("CSV (*.csv)"));
+                                                    tr("Choose CSV file"), "", tr("CSV (*.csv)"));
 
     readCsv(fileName);
+
+    rd = new RaitingDialog(filmTable, this);
 
     std::uniform_real_distribution<> dist(0,filmTable[1].count()-1);
     mainFilm->setText(filmTable[1][dist(*QRandomGenerator::global())]);
@@ -30,14 +35,14 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
-    dir.setPath("./img/"+mainFilm->text());
+    dir.setPath("/Users/dmitrijlevankov/Desktop/move /img/"+mainFilm->text());
     fileList = dir.entryList();
 
-    ff = new FindForm(filmTable);
+    ff = new FindForm(filmTable, topicVector);
     connect(mainFilm, &MoveLabel::click, this, [&](){
         if(fileList.count() <= currPicNum)
             currPicNum = 2;
-        QPixmap pix("./img/"+mainFilm->toolTip()+"/"+fileList[currPicNum]);
+        QPixmap pix("/Users/dmitrijlevankov/Desktop/move /img/"+mainFilm->toolTip()+"/"+fileList[currPicNum]);
         QSize pixSize = pix.size();
         QSize newSize{};
         if(pixSize.width() > pixSize.height())
@@ -93,14 +98,14 @@ void MainWindow::processMoveMarix()
                 mv->setText(filmTable[1][dist(*QRandomGenerator::global())]);
                 mv->setToolTip(mv->text());
 
-                QDir dir("./img/"+mv->text());
+                QDir dir("/Users/dmitrijlevankov/Desktop/move /img/"+mv->text());
                 QStringList fileList = dir.entryList();
 
-                QPixmap pix("./img/"+mv->text()+"/"+fileList[2]);
+                QPixmap pix("/Users/dmitrijlevankov/Desktop/move /img/"+mv->text()+"/"+fileList[2]);
                 if(pix.width() && pix.height())
                     mv->drawPixmap(pix.scaled(112,150));
                 else
-                    qDebug() << "Пустой рисунок" << "./img/"+mv->text()+"/"+fileList[2];
+                    qDebug() << "No image" << "/Users/dmitrijlevankov/Desktop/move /img/"+mv->text()+"/"+fileList[2];
 
                 connect(mv, &MoveLabel::click, this, [&](){
                     MoveLabel *mv = static_cast<MoveLabel*>(sender());
@@ -154,7 +159,7 @@ void MainWindow::readCsv(QString fileAddress)
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         QMessageBox msgBox;
-        msgBox.setText("Файл не открылся");
+        msgBox.setText("File is not open");
         msgBox.exec();
         exit(1);
     }
@@ -196,7 +201,7 @@ void MainWindow::resizeEvent(QResizeEvent *)
     int imageNum = 3;
     while(fileList.count() > imageNum)
     {
-        QPixmap pix("./img/"+mainFilm->toolTip()+"/"+fileList[imageNum]);
+        QPixmap pix("/Users/dmitrijlevankov/Desktop/move /img/"+mainFilm->toolTip()+"/"+fileList[imageNum]);
         QSize pixSize = pix.size();
 
 
@@ -233,5 +238,11 @@ void MainWindow::on_toolButton_clicked()
 void MainWindow::on_ac_find_triggered()
 {
     ff->show();
+}
+
+
+void MainWindow::on_ac_rating_triggered()
+{
+    rd->show();
 }
 

@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/move.dir/movecard.cpp.o.d"
   "CMakeFiles/move.dir/movelabel.cpp.o"
   "CMakeFiles/move.dir/movelabel.cpp.o.d"
+  "CMakeFiles/move.dir/raitingdialog.cpp.o"
+  "CMakeFiles/move.dir/raitingdialog.cpp.o.d"
   "move"
   "move.pdb"
   "move_autogen/EWIEGA46WW/qrc_img.cpp"

@@ -355,6 +355,30 @@ movelabel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/movelabel.cpp.s
 .PHONY : movelabel.cpp.s
 
+raitingdialog.o: raitingdialog.cpp.o
+.PHONY : raitingdialog.o
+
+# target to build an object file
+raitingdialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/raitingdialog.cpp.o
+.PHONY : raitingdialog.cpp.o
+
+raitingdialog.i: raitingdialog.cpp.i
+.PHONY : raitingdialog.i
+
+# target to preprocess a source file
+raitingdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/raitingdialog.cpp.i
+.PHONY : raitingdialog.cpp.i
+
+raitingdialog.s: raitingdialog.cpp.s
+.PHONY : raitingdialog.s
+
+# target to generate assembly for a file
+raitingdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/raitingdialog.cpp.s
+.PHONY : raitingdialog.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -390,6 +414,9 @@ help:
 	@echo "... movelabel.o"
 	@echo "... movelabel.i"
 	@echo "... movelabel.s"
+	@echo "... raitingdialog.o"
+	@echo "... raitingdialog.i"
+	@echo "... raitingdialog.s"
 .PHONY : help
 
 

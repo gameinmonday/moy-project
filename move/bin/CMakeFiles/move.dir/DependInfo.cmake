@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/repetitor/_QtProjects/move/bin/move_autogen/mocs_compilation.cpp" "CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.o.d"
   "/home/repetitor/_QtProjects/move/movecard.cpp" "CMakeFiles/move.dir/movecard.cpp.o" "gcc" "CMakeFiles/move.dir/movecard.cpp.o.d"
   "/home/repetitor/_QtProjects/move/movelabel.cpp" "CMakeFiles/move.dir/movelabel.cpp.o" "gcc" "CMakeFiles/move.dir/movelabel.cpp.o.d"
+  "/home/repetitor/_QtProjects/move/raitingdialog.cpp" "CMakeFiles/move.dir/raitingdialog.cpp.o" "gcc" "CMakeFiles/move.dir/raitingdialog.cpp.o.d"
   )
 
 # Targets to which this target links.

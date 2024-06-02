@@ -1,0 +1,9 @@
+/Users/dmitrijlevankov/Desktop/move /build/Desktop_x86_darwin_generic_mach_o_32bit-Debug/CMakeFiles/move.dir
+/Users/dmitrijlevankov/Desktop/move /build/Desktop_x86_darwin_generic_mach_o_32bit-Debug/CMakeFiles/edit_cache.dir
+/Users/dmitrijlevankov/Desktop/move /build/Desktop_x86_darwin_generic_mach_o_32bit-Debug/CMakeFiles/rebuild_cache.dir
+/Users/dmitrijlevankov/Desktop/move /build/Desktop_x86_darwin_generic_mach_o_32bit-Debug/CMakeFiles/list_install_components.dir
+/Users/dmitrijlevankov/Desktop/move /build/Desktop_x86_darwin_generic_mach_o_32bit-Debug/CMakeFiles/install.dir
+/Users/dmitrijlevankov/Desktop/move /build/Desktop_x86_darwin_generic_mach_o_32bit-Debug/CMakeFiles/install/local.dir
+/Users/dmitrijlevankov/Desktop/move /build/Desktop_x86_darwin_generic_mach_o_32bit-Debug/CMakeFiles/install/strip.dir
+/Users/dmitrijlevankov/Desktop/move /build/Desktop_x86_darwin_generic_mach_o_32bit-Debug/CMakeFiles/move_autogen_timestamp_deps.dir
+/Users/dmitrijlevankov/Desktop/move /build/Desktop_x86_darwin_generic_mach_o_32bit-Debug/CMakeFiles/move_autogen.dir

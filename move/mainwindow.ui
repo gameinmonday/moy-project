@@ -45,7 +45,7 @@
      <x>0</x>
      <y>0</y>
      <width>550</width>
-     <height>16</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -53,6 +53,7 @@
      <string>Файл</string>
     </property>
     <addaction name="ac_find"/>
+    <addaction name="ac_rating"/>
     <addaction name="ac_exit"/>
    </widget>
    <addaction name="menu"/>
@@ -60,12 +61,35 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="ac_find">
    <property name="text">
-    <string>Поиск</string>
+    <string>Search</string>
    </property>
   </action>
   <action name="ac_exit">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
-    <string>Выход</string>
+    <string>Exit</string>
+   </property>
+   <property name="statusTip">
+    <string>Exit</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="ac_rating">
+   <property name="text">
+    <string>Watched Films</string>
    </property>
   </action>
  </widget>

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "move_autogen/include/ui_findform.h"
   "move_autogen/include/ui_mainwindow.h"
   "move_autogen/include/ui_movecard.h"
+  "move_autogen/include/ui_raitingdialog.h"
   "move_autogen/mocs_compilation.cpp"
 )
 

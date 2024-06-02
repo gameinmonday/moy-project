@@ -6,6 +6,8 @@
 #include <QDir>
 #include <QTableWidget>
 #include <QHeaderView>
+#include <QSpinBox>
+#include <QSettings>
 #include "movelabel.h"
 
 namespace Ui {
@@ -59,6 +61,7 @@ private:
     QVector<QString> attrVector{};
     int currPicNum = 2;
 
+    QSettings *settings{};
     QPixmap createPixmap();
 
 private slots:

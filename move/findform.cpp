@@ -3,13 +3,14 @@
 #include <QDir>
 #include <algorithm>
 
-FindForm::FindForm(QMap<int, QVector<QString>> filmTable, QWidget *parent)
+FindForm::FindForm(QMap<int, QVector<QString>> filmTable, QVector<QString> topicVector, QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::FindForm)
     , filmTable(filmTable)
+    , topicVector(topicVector)
 {
     ui->setupUi(this);
-    setWindowTitle("Поиск фильма");
+    setWindowTitle("Find a film");
     setWindowModality(Qt::ApplicationModal);
     ui->tw_filmList->setColumnWidth(0,150);
     setFixedWidth(650);
@@ -107,7 +108,7 @@ void FindForm::updateFilmList(const QString &subStr)
                 continue;
         }
 
-        QDir dir("./img/"+filmTable[1][filmIndex]);
+        QDir dir("/Users/dmitrijlevankov/Desktop/move /img/"+filmTable[1][filmIndex]);
         QStringList fileList = dir.entryList();
         if(!fileList.count())
             continue;
@@ -116,8 +117,20 @@ void FindForm::updateFilmList(const QString &subStr)
         ui->tw_filmList->setItem(newRowNum, 0, new QTableWidgetItem(filmTable[1][filmIndex]));
 
         MoveLabel *mv = new MoveLabel(ui->tw_filmList);
+        mv->setToolTip(filmTable[1][filmIndex]);
+        connect(mv, &MoveLabel::click, this, [&](){
+            MoveLabel *mv = static_cast<MoveLabel*>(sender());
+            QString moveName = mv->toolTip();
+            int moveIndex = filmTable[1].indexOf(moveName);
+            QVector<QString> moveParams{};
+            moveParams << filmTable[0][moveIndex] << filmTable[1][moveIndex] << filmTable[2][moveIndex] << filmTable[3][moveIndex] <<
+                filmTable[4][moveIndex] << filmTable[5][moveIndex] << filmTable[6][moveIndex] << filmTable[7][moveIndex] << filmTable[8][moveIndex]
+                       << filmTable[9][moveIndex] << filmTable[10][moveIndex] << filmTable[11][moveIndex]<<filmTable[12][moveIndex];
+            MoveCard *mc = new MoveCard(topicVector,moveParams);
+            mc->show();
+        });
 
-        QPixmap pix("./img/"+filmTable[1][filmIndex]+"/"+fileList[2]);
+        QPixmap pix("/Users/dmitrijlevankov/Desktop/move /img/"+filmTable[1][filmIndex]+"/"+fileList[2]);
         if(pix.width() && pix.height()) {
             mv->drawPixmap(pix.scaled(112,150));
             ui->tw_filmList->setRowHeight(newRowNum, 150);

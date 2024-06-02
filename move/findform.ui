@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>371</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <item row="5" column="0">
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>Артист:</string>
+        <string>Actor:</string>
        </property>
       </widget>
      </item>
@@ -36,17 +36,17 @@
        </attribute>
        <column>
         <property name="text">
-         <string>Название фильма</string>
+         <string>Name</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Афиша</string>
+         <string>Poster</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Год выпуска</string>
+         <string>Year</string>
         </property>
        </column>
       </widget>
@@ -87,14 +87,14 @@
      <item row="1" column="0">
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>Жандр:</string>
+        <string>Genre:</string>
        </property>
       </widget>
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Год:</string>
+        <string>Year:</string>
        </property>
       </widget>
      </item>

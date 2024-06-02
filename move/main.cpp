@@ -1,6 +1,7 @@
 #include "mainwindow.h"
-
 #include <QApplication>
+#include <QImage>
+#include <cstdlib>
 
 int main(int argc, char *argv[])
 {

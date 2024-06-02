@@ -27,6 +27,7 @@ class Ui_MainWindow
 public:
     QAction *ac_find;
     QAction *ac_exit;
+    QAction *ac_rating;
     QWidget *centralwidget;
     QGridLayout *gridLayout_3;
     QGridLayout *gridLayout;
@@ -51,6 +52,8 @@ public:
         ac_find->setObjectName("ac_find");
         ac_exit = new QAction(MainWindow);
         ac_exit->setObjectName("ac_exit");
+        ac_rating = new QAction(MainWindow);
+        ac_rating->setObjectName("ac_rating");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         gridLayout_3 = new QGridLayout(centralwidget);
@@ -83,6 +86,7 @@ public:
 
         menubar->addAction(menu->menuAction());
         menu->addAction(ac_find);
+        menu->addAction(ac_rating);
         menu->addAction(ac_exit);
 
         retranslateUi(MainWindow);
@@ -95,6 +99,7 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         ac_find->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\270\321\201\320\272", nullptr));
         ac_exit->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\321\205\320\276\320\264", nullptr));
+        ac_rating->setText(QCoreApplication::translate("MainWindow", "\320\240\320\265\320\271\321\202\320\270\320\275\320\263\320\276\320\262\321\213\320\265 \321\204\320\270\320\273\321\214\320\274\321\213", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273", nullptr));
     } // retranslateUi
 
