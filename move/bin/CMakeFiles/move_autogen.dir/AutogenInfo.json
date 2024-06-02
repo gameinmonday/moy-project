@@ -425,9 +425,21 @@
 			null
 		],
 		[
+			"/home/repetitor/_QtProjects/move/movecard.h",
+			"MU",
+			"EWIEGA46WW/moc_movecard.cpp",
+			null
+		],
+		[
 			"/home/repetitor/_QtProjects/move/movelabel.h",
 			"MU",
 			"EWIEGA46WW/moc_movelabel.cpp",
+			null
+		],
+		[
+			"/home/repetitor/_QtProjects/move/raitingdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_raitingdialog.cpp",
 			null
 		]
 	],
@@ -490,7 +502,9 @@
 		[ "/home/repetitor/_QtProjects/move/findform.cpp", "MU", null ],
 		[ "/home/repetitor/_QtProjects/move/main.cpp", "MU", null ],
 		[ "/home/repetitor/_QtProjects/move/mainwindow.cpp", "MU", null ],
-		[ "/home/repetitor/_QtProjects/move/movelabel.cpp", "MU", null ]
+		[ "/home/repetitor/_QtProjects/move/movecard.cpp", "MU", null ],
+		[ "/home/repetitor/_QtProjects/move/movelabel.cpp", "MU", null ],
+		[ "/home/repetitor/_QtProjects/move/raitingdialog.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include "movelabel.h"
 #include "findform.h"
+#include "movecard.h"
+#include "raitingdialog.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -21,6 +23,7 @@ public:
 private:
     Ui::MainWindow *ui;
     QStringList imgPathList{};
+    QVector<QString> topicVector{};
 
 
 
@@ -28,6 +31,15 @@ private:
     void readCsv(QString fileAddress);
 
     QMap<int, QVector<QString>> filmTable{};
+    QStringList fileList{};
+
+    FindForm *ff{};
+
+    MoveLabel *mainFilm{};
+
+    int currPicNum = 2;
+
+    RaitingDialog *rd{};
 
 protected:
     void resizeEvent(QResizeEvent *) override;
@@ -38,6 +50,10 @@ public slots:
 private slots:
 
     void on_toolButton_clicked();
+
+    void on_ac_find_triggered();
+
+    void on_ac_rating_triggered();
 
 signals:
     void testSignal();

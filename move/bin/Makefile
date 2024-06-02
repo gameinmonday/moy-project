@@ -307,6 +307,30 @@ move_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/move_autogen/mocs_compilation.cpp.s
 .PHONY : move_autogen/mocs_compilation.cpp.s
 
+movecard.o: movecard.cpp.o
+.PHONY : movecard.o
+
+# target to build an object file
+movecard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/movecard.cpp.o
+.PHONY : movecard.cpp.o
+
+movecard.i: movecard.cpp.i
+.PHONY : movecard.i
+
+# target to preprocess a source file
+movecard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/movecard.cpp.i
+.PHONY : movecard.cpp.i
+
+movecard.s: movecard.cpp.s
+.PHONY : movecard.s
+
+# target to generate assembly for a file
+movecard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/movecard.cpp.s
+.PHONY : movecard.cpp.s
+
 movelabel.o: movelabel.cpp.o
 .PHONY : movelabel.o
 
@@ -330,6 +354,30 @@ movelabel.s: movelabel.cpp.s
 movelabel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/movelabel.cpp.s
 .PHONY : movelabel.cpp.s
+
+raitingdialog.o: raitingdialog.cpp.o
+.PHONY : raitingdialog.o
+
+# target to build an object file
+raitingdialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/raitingdialog.cpp.o
+.PHONY : raitingdialog.cpp.o
+
+raitingdialog.i: raitingdialog.cpp.i
+.PHONY : raitingdialog.i
+
+# target to preprocess a source file
+raitingdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/raitingdialog.cpp.i
+.PHONY : raitingdialog.cpp.i
+
+raitingdialog.s: raitingdialog.cpp.s
+.PHONY : raitingdialog.s
+
+# target to generate assembly for a file
+raitingdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/raitingdialog.cpp.s
+.PHONY : raitingdialog.cpp.s
 
 # Help Target
 help:
@@ -360,9 +408,15 @@ help:
 	@echo "... move_autogen/mocs_compilation.o"
 	@echo "... move_autogen/mocs_compilation.i"
 	@echo "... move_autogen/mocs_compilation.s"
+	@echo "... movecard.o"
+	@echo "... movecard.i"
+	@echo "... movecard.s"
 	@echo "... movelabel.o"
 	@echo "... movelabel.i"
 	@echo "... movelabel.s"
+	@echo "... raitingdialog.o"
+	@echo "... raitingdialog.i"
+	@echo "... raitingdialog.s"
 .PHONY : help
 
 

@@ -10,14 +10,14 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -25,15 +25,16 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *ac_find;
+    QAction *ac_exit;
+    QAction *ac_rating;
     QWidget *centralwidget;
     QGridLayout *gridLayout_3;
     QGridLayout *gridLayout;
-    QLabel *l_mainFilm;
     QGridLayout *gr_randomFilm;
     QHBoxLayout *horizontalLayout;
-    QToolButton *toolButton_2;
-    QToolButton *toolButton;
     QMenuBar *menubar;
+    QMenu *menu;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -47,40 +48,27 @@ public:
         sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
         MainWindow->setSizePolicy(sizePolicy);
         MainWindow->setMinimumSize(QSize(550, 1000));
+        ac_find = new QAction(MainWindow);
+        ac_find->setObjectName("ac_find");
+        ac_exit = new QAction(MainWindow);
+        ac_exit->setObjectName("ac_exit");
+        ac_rating = new QAction(MainWindow);
+        ac_rating->setObjectName("ac_rating");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         gridLayout_3 = new QGridLayout(centralwidget);
         gridLayout_3->setObjectName("gridLayout_3");
         gridLayout = new QGridLayout();
         gridLayout->setObjectName("gridLayout");
-        l_mainFilm = new QLabel(centralwidget);
-        l_mainFilm->setObjectName("l_mainFilm");
-        sizePolicy.setHeightForWidth(l_mainFilm->sizePolicy().hasHeightForWidth());
-        l_mainFilm->setSizePolicy(sizePolicy);
-        l_mainFilm->setScaledContents(false);
-        l_mainFilm->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(l_mainFilm, 1, 0, 1, 2);
-
         gr_randomFilm = new QGridLayout();
         gr_randomFilm->setObjectName("gr_randomFilm");
 
-        gridLayout->addLayout(gr_randomFilm, 2, 0, 1, 2);
+        gridLayout->addLayout(gr_randomFilm, 1, 0, 1, 2);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        toolButton_2 = new QToolButton(centralwidget);
-        toolButton_2->setObjectName("toolButton_2");
 
-        horizontalLayout->addWidget(toolButton_2);
-
-        toolButton = new QToolButton(centralwidget);
-        toolButton->setObjectName("toolButton");
-
-        horizontalLayout->addWidget(toolButton);
-
-
-        gridLayout->addLayout(horizontalLayout, 0, 1, 1, 1);
+        gridLayout->addLayout(horizontalLayout, 0, 0, 1, 2);
 
 
         gridLayout_3->addLayout(gridLayout, 0, 0, 1, 1);
@@ -89,10 +77,17 @@ public:
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
         menubar->setGeometry(QRect(0, 0, 550, 16));
+        menu = new QMenu(menubar);
+        menu->setObjectName("menu");
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
+
+        menubar->addAction(menu->menuAction());
+        menu->addAction(ac_find);
+        menu->addAction(ac_rating);
+        menu->addAction(ac_exit);
 
         retranslateUi(MainWindow);
 
@@ -102,9 +97,10 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        l_mainFilm->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        toolButton_2->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        toolButton->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
+        ac_find->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\270\321\201\320\272", nullptr));
+        ac_exit->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\321\205\320\276\320\264", nullptr));
+        ac_rating->setText(QCoreApplication::translate("MainWindow", "\320\240\320\265\320\271\321\202\320\270\320\275\320\263\320\276\320\262\321\213\320\265 \321\204\320\270\320\273\321\214\320\274\321\213", nullptr));
+        menu->setTitle(QCoreApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273", nullptr));
     } // retranslateUi
 
 };

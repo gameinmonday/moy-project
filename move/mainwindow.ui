@@ -30,44 +30,10 @@
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
       <item row="1" column="0" colspan="2">
-       <widget class="QLabel" name="l_mainFilm">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-        <property name="scaledContents">
-         <bool>false</bool>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0" colspan="2">
        <layout class="QGridLayout" name="gr_randomFilm"/>
       </item>
-      <item row="0" column="1">
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QToolButton" name="toolButton_2">
-          <property name="text">
-           <string>...</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QToolButton" name="toolButton">
-          <property name="text">
-           <string>...</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+      <item row="0" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout"/>
       </item>
      </layout>
     </item>
@@ -79,11 +45,53 @@
      <x>0</x>
      <y>0</y>
      <width>550</width>
-     <height>16</height>
+     <height>24</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="ac_find"/>
+    <addaction name="ac_rating"/>
+    <addaction name="ac_exit"/>
+   </widget>
+   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="ac_find">
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </action>
+  <action name="ac_exit">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="statusTip">
+    <string>Exit</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="ac_rating">
+   <property name="text">
+    <string>Watched Films</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
